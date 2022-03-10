@@ -21,7 +21,7 @@ struct Article : Codable {
     let title : String // Must have title
     let description : String?
     let url : String // Must have url
-    let urlToImage :String?
+    let urlToImage : String?
     let publishedAt : Date // Must have a date published at
     let content : String?
 }

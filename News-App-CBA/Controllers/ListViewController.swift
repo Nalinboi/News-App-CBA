@@ -23,15 +23,17 @@ class ListViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds // This is to see the frame of the table
+        tableView.frame = view.bounds 
     }
     
     ///Initialises the tableview
     func setupTableView() {
         view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ListViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 100
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {  // reloads the table when the view appears
@@ -39,7 +41,7 @@ class ListViewController: UIViewController {
     }
     
     func reloadTableViewData() {
-        articles = parser.getArticleObjects()
+        articles = parser.getArticleObjects() // Here I am loading the table data (array of articles)
     }
 }
 
@@ -49,12 +51,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ListViewCell
         let article = articles[indexPath.row] // Gets the article by looking at the number of the row
-        let title = article.title
+        cell.set(article: article)
         
-        cell.textLabel?.text = "\(title)" // Here we are simply naming each cell item in the table by the article name
         return cell
     }
     
