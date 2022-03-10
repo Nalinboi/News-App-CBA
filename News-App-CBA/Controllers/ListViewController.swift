@@ -17,8 +17,18 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(pullDownRefresh), for: .valueChanged)
+        
         title = "Nalin's News "
         setupTableView()
+    }
+    
+    @objc private func pullDownRefresh() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.reloadTableViewData()
+            self.tableView.refreshControl?.endRefreshing()
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -43,10 +53,13 @@ class ListViewController: UIViewController {
     
     func reloadTableViewData() {
         articles = parser.getArticleObjects() // Here I am loading the table data (array of articles)
+//        if !articles.isEmpty { // as long as there are items in the array
+//
+//        }
     }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articles.count
     }
@@ -65,6 +78,13 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         let article = articles[indexPath.row]
         if let url = URL(string: article.url) { // When you tap on a row, it goes to the news link
             UIApplication.shared.open(url)
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let positionY = scrollView.contentOffset.y
+        if positionY > tableView.contentSize.height-100-scrollView.frame.size.height {
+            print("fetch more data")
         }
     }
 }

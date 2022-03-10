@@ -28,7 +28,6 @@ struct ParserViewModelProtocol {
     
     func getArticleObjects() -> [Article] {
         let json:String = parseNewsApi() // The get request returns a string
-        // print(json)
         let jsonData = Data(json.utf8) // we format this string into utf8, and change type to data
         
         // We then use the data above to decode the data into a json object below.
@@ -39,9 +38,6 @@ struct ParserViewModelProtocol {
         myDecoder.dateDecodingStrategy = .iso8601 // Using a different date decoding stratagy to decode the specific type of date given from this api
         
         let articleObjects = try! myDecoder.decode(ApiRoot.self, from: jsonData)
-        print(type(of: articleObjects))
-        print(articleObjects.status)
-        print(articleObjects.totalResults)
         
         return articleObjects.articles
     }
