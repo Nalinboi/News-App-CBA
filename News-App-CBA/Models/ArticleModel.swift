@@ -9,7 +9,7 @@ import Foundation
 
 //https://newscatcherapi.com/free-news-api
 
-struct Root : Codable {
+struct ApiRoot : Codable {
     let status : String // Must have a status
     let totalResults : Int // Must have results
     let articles : [Article] // Must have articles
@@ -21,7 +21,7 @@ struct Article : Codable {
     let title : String // Must have title
     let description : String?
     let url : String // Must have url
-    let urlToImage : [Article]?
+    let urlToImage :String?
     let publishedAt : Date // Must have a date published at
     let content : String?
 }
