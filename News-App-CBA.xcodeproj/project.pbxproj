@@ -49,6 +49,7 @@
 		400AB97627D8AECE00299FA1 /* News_App_CBAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_CBAUITests.swift; sourceTree = "<group>"; };
 		400AB97827D8AECE00299FA1 /* News_App_CBAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_CBAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		400AB98A27D8F2CC00299FA1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		40C180F027D9ACF0005CC380 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +164,7 @@
 				400AB95E27D8AECE00299FA1 /* Assets.xcassets */,
 				400AB95527D8AECC00299FA1 /* AppDelegate.swift */,
 				400AB95727D8AECC00299FA1 /* SceneDelegate.swift */,
+				40C180F027D9ACF0005CC380 /* Config.xcconfig */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
