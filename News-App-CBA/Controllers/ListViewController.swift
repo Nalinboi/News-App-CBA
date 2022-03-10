@@ -34,6 +34,7 @@ class ListViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = 100
         
+        tableView.pin(to: view)
     }
     
     override func viewWillAppear(_ animated: Bool) {  // reloads the table when the view appears

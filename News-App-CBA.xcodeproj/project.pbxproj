@@ -15,6 +15,7 @@
 		400AB97727D8AECE00299FA1 /* News_App_CBAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB97627D8AECE00299FA1 /* News_App_CBAUITests.swift */; };
 		400AB97927D8AECE00299FA1 /* News_App_CBAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB97827D8AECE00299FA1 /* News_App_CBAUITestsLaunchTests.swift */; };
 		400AB98B27D8F2CC00299FA1 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB98A27D8F2CC00299FA1 /* ArticleModel.swift */; };
+		408DFA6327DA8B32006B0193 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DFA6227DA8B32006B0193 /* UIView+Ext.swift */; };
 		40B9DA8A27DA795600092BB6 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B9DA8927DA795600092BB6 /* ListViewCell.swift */; };
 		40C180F227D9C4ED005CC380 /* ParserViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C180F127D9C4ED005CC380 /* ParserViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		400AB97627D8AECE00299FA1 /* News_App_CBAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_CBAUITests.swift; sourceTree = "<group>"; };
 		400AB97827D8AECE00299FA1 /* News_App_CBAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_App_CBAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		400AB98A27D8F2CC00299FA1 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		408DFA6227DA8B32006B0193 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		40B9DA8927DA795600092BB6 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		40C180F027D9ACF0005CC380 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		40C180F127D9C4ED005CC380 /* ParserViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				400AB95927D8AECC00299FA1 /* ListViewController.swift */,
 				40B9DA8927DA795600092BB6 /* ListViewCell.swift */,
+				408DFA6227DA8B32006B0193 /* UIView+Ext.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				400AB95A27D8AECC00299FA1 /* ListViewController.swift in Sources */,
 				40C180F227D9C4ED005CC380 /* ParserViewModelProtocol.swift in Sources */,
 				400AB95627D8AECC00299FA1 /* AppDelegate.swift in Sources */,
+				408DFA6327DA8B32006B0193 /* UIView+Ext.swift in Sources */,
 				40B9DA8A27DA795600092BB6 /* ListViewCell.swift in Sources */,
 				400AB95827D8AECC00299FA1 /* SceneDelegate.swift in Sources */,
 			);

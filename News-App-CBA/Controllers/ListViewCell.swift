@@ -30,7 +30,7 @@ class ListViewCell: UITableViewCell {
             thumbnail.load(url: URL(string: url)!)
         }
         
-        title.text = "article.title"
+        title.text = article.title
     }
     
     required init?(coder: NSCoder) {
@@ -59,7 +59,7 @@ class ListViewCell: UITableViewCell {
     func setTitleConstraints() {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        title.leadingAnchor.constraint(equalTo: thumbnail.leadingAnchor, constant: 20).isActive = true
+        title.leadingAnchor.constraint(equalTo: thumbnail.trailingAnchor, constant: 20).isActive = true
         title.heightAnchor.constraint(equalToConstant: 80).isActive = true
         title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
     }
