@@ -62,10 +62,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true) // This deselects a row after it is tapped on by a user
         
-//        let article = articles[indexPath.row]
-//        if let url = URL(string: article.url) { // When you tap on a row, it goes to the news link
-//            UIApplication.shared.open(url)
-//        }
+        let article = articles[indexPath.row]
+        if let url = URL(string: article.url) { // When you tap on a row, it goes to the news link
+            UIApplication.shared.open(url)
+        }
     }
 }
 
