@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		400AB95627D8AECC00299FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB95527D8AECC00299FA1 /* AppDelegate.swift */; };
 		400AB95827D8AECC00299FA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB95727D8AECC00299FA1 /* SceneDelegate.swift */; };
-		400AB95A27D8AECC00299FA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB95927D8AECC00299FA1 /* ViewController.swift */; };
+		400AB95A27D8AECC00299FA1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB95927D8AECC00299FA1 /* ListViewController.swift */; };
 		400AB95F27D8AECE00299FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400AB95E27D8AECE00299FA1 /* Assets.xcassets */; };
 		400AB96D27D8AECE00299FA1 /* News_App_CBATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB96C27D8AECE00299FA1 /* News_App_CBATests.swift */; };
 		400AB97727D8AECE00299FA1 /* News_App_CBAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AB97627D8AECE00299FA1 /* News_App_CBAUITests.swift */; };
@@ -39,7 +39,7 @@
 		400AB95227D8AECC00299FA1 /* News-App-CBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News-App-CBA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		400AB95527D8AECC00299FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		400AB95727D8AECC00299FA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		400AB95927D8AECC00299FA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		400AB95927D8AECC00299FA1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		400AB95E27D8AECE00299FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		400AB96327D8AECE00299FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400AB96827D8AECE00299FA1 /* News-App-CBATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "News-App-CBATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +153,7 @@
 		400AB98827D8F0CA00299FA1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				400AB95927D8AECC00299FA1 /* ViewController.swift */,
+				400AB95927D8AECC00299FA1 /* ListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				400AB98B27D8F2CC00299FA1 /* ArticleModel.swift in Sources */,
-				400AB95A27D8AECC00299FA1 /* ViewController.swift in Sources */,
+				400AB95A27D8AECC00299FA1 /* ListViewController.swift in Sources */,
 				40C180F227D9C4ED005CC380 /* ParserViewModelProtocol.swift in Sources */,
 				400AB95627D8AECC00299FA1 /* AppDelegate.swift in Sources */,
 				400AB95827D8AECC00299FA1 /* SceneDelegate.swift in Sources */,
@@ -468,7 +468,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "News-App-CBA/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = ViewController;
+				INFOPLIST_KEY_UILaunchStoryboardName = ListViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -496,7 +496,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "News-App-CBA/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = ViewController;
+				INFOPLIST_KEY_UILaunchStoryboardName = ListViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
