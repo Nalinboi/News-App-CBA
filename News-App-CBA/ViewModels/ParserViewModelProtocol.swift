@@ -26,7 +26,7 @@ struct ParserViewModelProtocol {
         // There are two status', there is ok, and there is error. 
     }
     
-    func getArticleObjects() -> ApiRoot {
+    func getArticleObjects() -> [Article] {
         let json:String = parseNewsApi() // The get request returns a string
         // print(json)
         let jsonData = Data(json.utf8) // we format this string into utf8, and change type to data
@@ -43,6 +43,6 @@ struct ParserViewModelProtocol {
         print(articleObjects.status)
         print(articleObjects.totalResults)
         
-        return articleObjects
+        return articleObjects.articles
     }
 }
