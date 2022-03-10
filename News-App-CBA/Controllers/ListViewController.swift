@@ -13,6 +13,9 @@ class ListViewController: UIViewController {
     let parser = ParserViewModelProtocol()
     var articles: [Article] = []
     
+    var isPaginating: Bool = false
+    var paginations: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,6 +32,16 @@ class ListViewController: UIViewController {
             self.reloadTableViewData()
             self.tableView.refreshControl?.endRefreshing()
         }
+    }
+    
+    private func pullUpLoad() -> UIView {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
+        let spinner = UIActivityIndicatorView()
+        spinner.center = footerView.center
+        footerView.addSubview(spinner)
+        spinner.startAnimating()
+        
+        return footerView
     }
     
     override func viewDidLayoutSubviews() {
@@ -52,10 +65,8 @@ class ListViewController: UIViewController {
     }
     
     func reloadTableViewData() {
+        paginations = 0 // Everytime we refresh the page, we will reset paginations to 0
         articles = parser.getArticleObjects() // Here I am loading the table data (array of articles)
-//        if !articles.isEmpty { // as long as there are items in the array
-//
-//        }
     }
 }
 
@@ -83,8 +94,18 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let positionY = scrollView.contentOffset.y
-        if positionY > tableView.contentSize.height-100-scrollView.frame.size.height {
-            print("fetch more data")
+        if positionY > tableView.contentSize.height-80-scrollView.frame.size.height {
+            if !isPaginating {
+                isPaginating = true
+                // print("fetch more data")
+                self.tableView.tableFooterView = pullUpLoad()
+            } else { // if it is paginating wait for 1 second and load more data
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.paginations += 1
+                    self.tableView.tableFooterView = nil
+                    self.isPaginating = false
+                }
+            }
         }
     }
 }
