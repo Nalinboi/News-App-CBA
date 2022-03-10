@@ -99,11 +99,11 @@
 		400AB95427D8AECC00299FA1 /* News-App-CBA */ = {
 			isa = PBXGroup;
 			children = (
-				400AB98927D8F11500299FA1 /* Resources */,
-				400AB98827D8F0CA00299FA1 /* Controllers */,
 				400AB98727D8ED1C00299FA1 /* Models */,
-				400AB98627D8ED1200299FA1 /* ViewModels */,
 				400AB98527D8ED0600299FA1 /* Views */,
+				400AB98627D8ED1200299FA1 /* ViewModels */,
+				400AB98827D8F0CA00299FA1 /* Controllers */,
+				400AB98927D8F11500299FA1 /* Resources */,
 				400AB96327D8AECE00299FA1 /* Info.plist */,
 			);
 			path = "News-App-CBA";
