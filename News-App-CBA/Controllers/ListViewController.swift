@@ -10,7 +10,7 @@ import UIKit
 class ListViewController: UIViewController {
     let tableView = UITableView()
     
-    let parser = ParserViewModelProtocol()
+    let parser = ParserViewModel()
     var articles: [Article] = []
     
     var isPaginating: Bool = false

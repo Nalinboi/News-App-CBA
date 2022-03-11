@@ -7,6 +7,8 @@
 
 import XCTest
 
+@testable import News_App_CBA
+
 class News_App_CBAUITests: XCTestCase {
 
     override func setUpWithError() throws {

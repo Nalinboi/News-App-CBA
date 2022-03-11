@@ -11,8 +11,8 @@ import Foundation
 
 struct ApiRoot : Codable {
     let status : String // Must have a status
-    let totalResults : Int // Must have results
-    let articles : [Article] // Must have articles
+    let totalResults : Int? // Must have results
+    let articles : [Article]? // Must have articles
 }
 
 struct Article : Codable {
