@@ -40,8 +40,6 @@ struct ParserViewModel: ParserViewModelProtocol {
         }
         do {
             let content = try String(contentsOf: myURL, encoding: .ascii)
-            print("Sorry this is what we needed ")
-            print(content)
             return content // Here we return the contents of the api get request as a large string.
         } catch let error {
             print("Error: \(error)")
