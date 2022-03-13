@@ -10,8 +10,11 @@ import XCTest
 @testable import News_App_CBA
 
 class News_App_CBAUITests: XCTestCase {
-
+    var app = XCUIApplication()
     override func setUpWithError() throws {
+        
+        app.launchArguments.append("Testing")
+        app.launch()
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -21,18 +24,24 @@ class News_App_CBAUITests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
+        app = XCUIApplication()
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testTableAppears() throws {
-        let app = XCUIApplication()
-        app.launchArguments.append("Testing")
-
-        app.launch()
+        
         
         let table = app.tables.firstMatch
         XCTAssert(table.exists) // Ensuring that something on table appears
     }
+    
+    func testTitleAppears() throws {
+    
+        
+        XCTAssert(app.staticTexts["Nalin's News"].exists)
+    }
+    
+
 
     // would add more tests using app.tables.staticTexts
 
