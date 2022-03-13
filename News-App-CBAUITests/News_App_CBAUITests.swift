@@ -26,6 +26,8 @@ class News_App_CBAUITests: XCTestCase {
 
     func testTableAppears() throws {
         let app = XCUIApplication()
+        app.launchArguments.append("Testing")
+
         app.launch()
         
         let table = app.tables.firstMatch

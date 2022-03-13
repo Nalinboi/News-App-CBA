@@ -8,8 +8,19 @@
 import Foundation
 
 struct ParserViewModel: ParserViewModelProtocol {
+    let good_data = """
+        {"status":"ok","totalResults":38,"articles":[{"source":{"id":null,"name":"The West Australian"},"author":"NCA NewsWire","title":"Fourth Japanese encephalitis case detected in NSW - The West Australian","description":"A deadly disease spread by mosquitoes that’s never been detected in NSW before has now infected more people, it’s been revealed.","url":"https://thewest.com.au/lifestyle/fourth-japanese-encephalitis-case-detected-in-nsw-c-6004863","urlToImage":"https://images.thewest.com.au/publication/C-6004863/aad89e97f23bffe873259238d8f53cf015ab1091-16x9-x0y0w2047h1151.jpg?imwidth=1200","publishedAt":"2022-03-10T04:29:00Z","content":"NSW has recorded its fourth case of Japanese encephalitis as the disease spreads across the state.The mosquito-borne virus had never been detected in the state before this year.The latest person … [+1426 chars]"}]}
+        """
+
     func getArticleObjects() -> [Article] {
-        let json:String = parseNewsApi() // The get request returns a string
+        var json:String = parseNewsApi() // The get request returns a string
+        
+        let uiTesting = ProcessInfo.processInfo.arguments.contains("Testing")
+        if uiTesting {
+            print("We did it")
+            json = good_data
+        }
+        
         let jsonData = Data(json.utf8) // we format this string into utf8, and change type to data
         
         // We then use the data above to decode the data into a json object below.
@@ -28,6 +39,7 @@ struct ParserViewModel: ParserViewModelProtocol {
         
         // we do not want to crash the program, if nothing returns then so be it. 
         return [] // TODO: error handling: if all else fails return nothing
+        
     }
     
     func parseNewsApi() -> String {
