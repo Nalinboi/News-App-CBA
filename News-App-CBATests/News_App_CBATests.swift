@@ -19,6 +19,7 @@ class News_App_CBATests: XCTestCase {
     }
 
 
+    // This is to test that the api works fine and returns articles
     func testGoodJson() throws {
         let mockParserClient = MockParserViewModel()
         let articleObjects:[Article] = mockParserClient.getArticleObjects()
@@ -26,6 +27,8 @@ class News_App_CBATests: XCTestCase {
         XCTAssertEqual(articleObjects.count, 1)
     }
     
+    // This is to test that when something goes wrong with the api, rather than crashing, it will return 0 article objects.
+    // The error should be logged for developers to notice. 
     func testBadJson() throws {
         let mockParserClient = MockParserViewModel(true)
         let articleObjects:[Article] = mockParserClient.getArticleObjects()
