@@ -37,6 +37,11 @@ class ListViewCell: UITableViewCell {
         fatalError()
     }
     
+    override func prepareForReuse() {
+        // We do this to avoid a bug where reused cells display wrong images
+        self.thumbnail.image = nil
+    }
+    
     func configureThumbnail() {
         thumbnail.layer.cornerRadius = 10
         thumbnail.clipsToBounds = true
