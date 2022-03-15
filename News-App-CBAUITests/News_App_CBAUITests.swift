@@ -11,8 +11,8 @@ import XCTest
 
 class News_App_CBAUITests: XCTestCase {
     var app = XCUIApplication()
+    
     override func setUpWithError() throws {
-        
         app.launchArguments.append("Testing")
         app.launch()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,7 +24,6 @@ class News_App_CBAUITests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        app = XCUIApplication()
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
@@ -37,7 +36,9 @@ class News_App_CBAUITests: XCTestCase {
         XCTAssert(app.staticTexts["Nalin's News"].exists)
     }
     
-
+    func testRowAppears() throws {
+        XCTAssert(app.staticTexts["Fourth Japanese encephalitis case detected in NSW - The West Australian"].exists)
+    }
 
     // would add more tests using app.tables.staticTexts
 
@@ -45,7 +46,9 @@ class News_App_CBAUITests: XCTestCase {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
+                app = XCUIApplication()
+                app.launchArguments.append("Testing")
+                app.launch()
             }
         }
     }

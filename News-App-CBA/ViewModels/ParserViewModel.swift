@@ -11,9 +11,10 @@ struct ParserViewModel: ParserViewModelProtocol {
     func getArticleObjects() -> [Article] {
         var json:String = parseNewsApi() // The get request returns a string
         
+        
         let uiTesting = ProcessInfo.processInfo.arguments.contains("Testing")
+        
         if uiTesting {
-            print("We did it")
             json = mock_good_response
         }
         
