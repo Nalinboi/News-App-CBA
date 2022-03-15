@@ -29,15 +29,11 @@ class News_App_CBAUITests: XCTestCase {
     }
 
     func testTableAppears() throws {
-        
-        
         let table = app.tables.firstMatch
         XCTAssert(table.exists) // Ensuring that something on table appears
     }
     
     func testTitleAppears() throws {
-    
-        
         XCTAssert(app.staticTexts["Nalin's News"].exists)
     }
     

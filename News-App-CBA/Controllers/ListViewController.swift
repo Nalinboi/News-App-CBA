@@ -23,7 +23,7 @@ class ListViewController: UIViewController {
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(pullDownRefresh), for: .valueChanged)
         
-        title = "Nalin's News "
+        title = "Nalin's News"
         setupTableView()
     }
     
@@ -71,8 +71,18 @@ class ListViewController: UIViewController {
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
+    // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
+    var articlesToShow: Int {
+        (8 + (paginations * 2))
+    }
+    
+    var isEnd: Bool { // Computed value to see if the user has scrolled to the end.
+        articlesToShow >= articles.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articles.count
+        // Return whatever is less, either the articles according to paginations, or the max number of articles.
+        return min(articlesToShow, articles.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -92,19 +102,27 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         }
     }
     
+    // A function that gets triggered when you scroll to the bottom for pagination. 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let positionY = scrollView.contentOffset.y
         if positionY > tableView.contentSize.height-80-scrollView.frame.size.height {
-            if !isPaginating {
-                isPaginating = true
-                // print("fetch more data")
-                self.tableView.tableFooterView = pullUpLoad()
-            } else { // if it is paginating wait for 1 second and load more data
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    self.paginations += 1
-                    self.tableView.tableFooterView = nil
-                    self.isPaginating = false
-                }
+            guard !isPaginating else {
+                // print("already paginating")
+                return
+            }
+            if isEnd { return } // If we have reached the end of content, no more paginating.
+            
+            // print("start paginating")
+            self.isPaginating = true
+            self.tableView.tableFooterView = pullUpLoad()
+            
+            // if it is paginating wait for 1 second and load more data
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.paginations += 1
+                self.tableView.reloadData()
+                self.tableView.tableFooterView = nil
+                self.isPaginating = false
+                // print("done paginating")
             }
         }
     }
