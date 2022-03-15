@@ -13,8 +13,8 @@ class ListViewController: UIViewController {
     let parser = ParserViewModel()
     var articles: [Article] = []
     
-    let articlesPerPagination: Int = 4 // How many more articles to load after paginating (constant)
-    let articlesBeforePagination: Int = 12 // How many articles we load before table is paginated.
+    let articlesPerPagination: Int = 3 // How many more articles to load after paginating (constant)
+    let articlesBeforePagination: Int = 10 // How many articles we load before table is paginated.
     
     var paginations: Int = 0
     var isPaginating: Bool = false
