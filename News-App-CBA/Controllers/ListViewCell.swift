@@ -66,7 +66,7 @@ class ListViewCell: UITableViewCell {
     
 }
 
-// An extentsion added to help load in nan imageview.
+// An extension added to help load in the thumbnail imageview.
 extension UIImageView {
     func load(url: URL) {
         DispatchQueue.global().async { [weak self] in

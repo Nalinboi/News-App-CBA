@@ -13,8 +13,11 @@ class ListViewController: UIViewController {
     let parser = ParserViewModel()
     var articles: [Article] = []
     
-    var isPaginating: Bool = false
+    let articlesPerPagination: Int = 4 // How many more articles to load after paginating (constant)
+    let articlesBeforePagination: Int = 12 // How many articles we load before table is paginated.
+    
     var paginations: Int = 0
+    var isPaginating: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,7 @@ class ListViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.reloadTableViewData()
             self.tableView.refreshControl?.endRefreshing()
+            self.tableView.reloadData()
         }
     }
     
@@ -73,7 +77,7 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
     // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
     var articlesToShow: Int {
-        (8 + (paginations * 2))
+        (articlesBeforePagination + (paginations * articlesPerPagination))
     }
     
     var isEnd: Bool { // Computed value to see if the user has scrolled to the end.
