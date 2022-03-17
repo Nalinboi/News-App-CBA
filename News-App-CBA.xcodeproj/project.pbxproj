@@ -141,6 +141,9 @@
 		400AB98527D8ED0600299FA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				400AB95927D8AECC00299FA1 /* ListViewController.swift */,
+				40B9DA8927DA795600092BB6 /* ListViewCell.swift */,
+				408DFA6227DA8B32006B0193 /* UIView+Ext.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,9 +168,6 @@
 		400AB98827D8F0CA00299FA1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				400AB95927D8AECC00299FA1 /* ListViewController.swift */,
-				40B9DA8927DA795600092BB6 /* ListViewCell.swift */,
-				408DFA6227DA8B32006B0193 /* UIView+Ext.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
