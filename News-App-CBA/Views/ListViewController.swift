@@ -22,13 +22,10 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupRefreshControl()
-        
         title = "Nalin's News"
         
+        setupRefreshControl()
         setupSearchBar()
-        searchController.hidesNavigationBarDuringPresentation = false
-
         setupTableView()
     }
     
@@ -131,9 +128,12 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         tableView.deselectRow(at: indexPath, animated: true) // This deselects a row after it is tapped on by a user
         
         let article = articles[indexPath.row]
-        if let url = URL(string: article.url) { // When you tap on a row, it goes to the news link
-            UIApplication.shared.open(url)
-        }
+        let webView = ArticleWebViewController(article: article)
+        navigationController?.pushViewController(webView, animated: true) // Pushing navigation to the webview of the article
+        
+        // if let url = URL(string: article.url) { // When you tap on a row, it goes to the news link
+        //     UIApplication.shared.open(url)
+        // }
     }
     
     // A function that gets triggered when you scroll to the bottom for pagination. 

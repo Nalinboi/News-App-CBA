@@ -26,7 +26,7 @@ class ListViewCell: UITableViewCell {
     }
     
     func set(article: Article) {
-        if let url = article.urlToImage { // When you tap on a row, it goes to the news link
+        if let url = article.urlToImage { // setting the table cell to be a thumbnail image (loading) followed by the article title
             thumbnail.load(url: URL(string: url)!)
         }
         
