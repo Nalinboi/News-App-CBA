@@ -23,7 +23,7 @@ class ArticleWebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = article.title
+        title = article.source.name
         
         view.addSubview(webView)
         
