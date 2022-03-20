@@ -9,6 +9,7 @@ import UIKit
 
 class ListViewController: UIViewController {
     let tableView = UITableView()
+    let searchController = UISearchController()
     
     let parser = ParserViewModel()
     var articles: [Article] = []
@@ -21,15 +22,17 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        tableView.refreshControl = UIRefreshControl()
-        tableView.refreshControl?.addTarget(self, action: #selector(pullDownRefresh), for: .valueChanged)
+        setupRefreshControl()
         
         title = "Nalin's News"
+        
+        setupSearchBar()
+        searchController.hidesNavigationBarDuringPresentation = false
+
         setupTableView()
     }
     
+    /// Happens when the user pulls down to refresh
     @objc private func pullDownRefresh() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.reloadTableViewData()
@@ -38,6 +41,7 @@ class ListViewController: UIViewController {
         }
     }
     
+    /// Happens when the user pulls up to load more articles.
     private func pullUpLoad() -> UIView {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
         let spinner = UIActivityIndicatorView()
@@ -50,7 +54,7 @@ class ListViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds 
+        tableView.frame = view.bounds
     }
     
     ///Initialises the tableview
@@ -64,17 +68,38 @@ class ListViewController: UIViewController {
         tableView.pin(to: view)
     }
     
+    /// Setting up the search bar
+    func setupSearchBar() {
+        searchController.searchBar.delegate = self
+        navigationItem.searchController = searchController
+    }
+    
+    /// Setting up for the loading circle for refreshing/pulling down
+    func setupRefreshControl(){
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(pullDownRefresh), for: .valueChanged)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {  // reloads the table when the view appears
         reloadTableViewData()
     }
     
+    /// A function that can be called to load new data (either when refreshing or typing a new request)
     func reloadTableViewData() {
         paginations = 0 // Everytime we refresh the page, we will reset paginations to 0
         articles = parser.getArticleObjects() // Here I am loading the table data (array of articles)
     }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
+extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, UISearchBarDelegate {
+    /// Updates everytime user presses search after typing something in the search bar.
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchController.searchBar.text else { // Safely unwrap text in search bar, otherwise return
+            return
+        }
+        print(text)
+    }
+    
     // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
     var articlesToShow: Int {
         (articlesBeforePagination + (paginations * articlesPerPagination))

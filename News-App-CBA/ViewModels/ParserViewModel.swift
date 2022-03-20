@@ -19,6 +19,7 @@ struct ParserViewModel: ParserViewModelProtocol {
         }
         
         let jsonData = Data(json.utf8) // we format this string into utf8, and change type to data
+
         
         // We then use the data above to decode the data into a json object below.
         // Here I use try! This is to ensure that if the parsing fails it will crash my program.
@@ -41,7 +42,8 @@ struct ParserViewModel: ParserViewModelProtocol {
     
     func parseNewsApi() -> String {
         let apiKey = Bundle.main.infoDictionary?["API_KEY"]
-        let urlString = "https://newsapi.org/v2/top-headlines?country=au&apiKey=\(String(describing: apiKey!))"
+        let urlString = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=\(String(describing: apiKey!))"
+        //        let urlString = "https://newsapi.org/v2/top-headlines?country=au&apiKey=\(String(describing: apiKey!))"
         
         guard let myURL = URL(string: urlString) else {
             print("Error: \(String(describing: link)) invalid url: \(urlString)")
