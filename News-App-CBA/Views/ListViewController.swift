@@ -102,6 +102,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         reloadTableViewData(searchQuery: text)
     }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        reloadTableViewData() // If the cancel button was pressed then we reload the table with the top headlines (no curated)
+    }
+    
     // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
     var articlesToShow: Int {
         (articlesBeforePagination + (paginations * articlesPerPagination))

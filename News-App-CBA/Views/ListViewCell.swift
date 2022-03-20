@@ -26,8 +26,10 @@ class ListViewCell: UITableViewCell {
     }
     
     func set(article: Article) {
-        if let url = article.urlToImage { // setting the table cell to be a thumbnail image (loading) followed by the article title
-            thumbnail.load(url: URL(string: url)!)
+        if let urlstring = article.urlToImage { // setting the table cell to be a thumbnail image (loading) followed by the article title
+            if let url = URL(string: urlstring) {
+                thumbnail.load(url: url)
+            }
         }
         
         title.text = article.title
