@@ -85,9 +85,14 @@ class ListViewController: UIViewController {
     }
     
     /// A function that can be called to load new data (either when refreshing or typing a new request)
-    func reloadTableViewData() {
+    func reloadTableViewData(searchQuery: String? = nil) {
         paginations = 0 // Everytime we refresh the page, we will reset paginations to 0
-        articles = parser.getArticleObjects() // Here I am loading the table data (array of articles)
+        if searchQuery != nil {
+            articles = parser.getArticleObjects(searchQuery: searchQuery) // Loading articles that include the searchquery
+        } else {
+            articles = parser.getArticleObjects() // Loading top headlines right now (in australia)
+        }
+        self.tableView.reloadData()
     }
 }
 
@@ -97,7 +102,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         guard let text = searchController.searchBar.text else { // Safely unwrap text in search bar, otherwise return
             return
         }
-        print(text)
+        reloadTableViewData(searchQuery: text)
     }
     
     // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
@@ -136,12 +141,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         let positionY = scrollView.contentOffset.y
         if positionY > tableView.contentSize.height-80-scrollView.frame.size.height {
             guard !isPaginating else {
-                // print("already paginating")
                 return
             }
             if isEnd { return } // If we have reached the end of content, no more paginating.
             
-            // print("start paginating")
             self.isPaginating = true
             self.tableView.tableFooterView = pullUpLoad()
             
@@ -151,7 +154,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
                 self.tableView.reloadData()
                 self.tableView.tableFooterView = nil
                 self.isPaginating = false
-                // print("done paginating")
             }
         }
     }

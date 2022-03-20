@@ -28,7 +28,7 @@ class MockParserViewModel {
 
 // This logic conforms under the parserviewmodelprotocol so we can mock the api feedback as well
 extension MockParserViewModel: ParserViewModelProtocol {
-    func parseNewsApi() -> String {
+    func parseNewsApi(searchQuery: String? = nil) -> String {
         if shouldReturnError { // If it is noted that the api request should return an error, then we use the bad json above
             return mock_bad_response
         } else {
@@ -36,7 +36,7 @@ extension MockParserViewModel: ParserViewModelProtocol {
         }
     }
     
-    func getArticleObjects() -> [Article] {
+    func getArticleObjects(searchQuery: String? = nil) -> [Article] {
         let json:String = parseNewsApi() // The get request returns a string
         let jsonData = Data(json.utf8) // we format this string into utf8, and change type to data
         

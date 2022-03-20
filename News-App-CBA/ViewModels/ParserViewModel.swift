@@ -8,14 +8,19 @@
 import Foundation
 
 struct ParserViewModel: ParserViewModelProtocol {
-    func getArticleObjects() -> [Article] {
-        var json:String = parseNewsApi() // The get request returns a string
+    func getArticleObjects(searchQuery: String? = nil) -> [Article] {
+        var json : String = ""
         
-        
+        // This section below sees if we are doing UI testing, if so, we mock a json response rather than calling the api
         let uiTesting = ProcessInfo.processInfo.arguments.contains("Testing")
-        
         if uiTesting {
             json = mock_good_response
+        } else { // If we are not doing UI testing, we will use the api get request
+            if searchQuery != nil {
+                json = parseNewsApi(searchQuery: searchQuery) // if we have a searchquery then find articles with that
+            } else {
+                json = parseNewsApi() // otherwise just do it the default way, top results for australia
+            }
         }
         
         let jsonData = Data(json.utf8) // we format this string into utf8, and change type to data
@@ -40,10 +45,15 @@ struct ParserViewModel: ParserViewModelProtocol {
         
     }
     
-    func parseNewsApi() -> String {
+    func parseNewsApi(searchQuery: String? = nil) -> String {
         let apiKey = Bundle.main.infoDictionary?["API_KEY"]
-        let urlString = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=\(String(describing: apiKey!))"
-        //        let urlString = "https://newsapi.org/v2/top-headlines?country=au&apiKey=\(String(describing: apiKey!))"
+        
+        // The default news shown is the top headlines for australia
+        var urlString = "https://newsapi.org/v2/top-headlines?country=au&apiKey=\(String(describing: apiKey!))"
+        
+        if searchQuery != nil { // Otherwise if the user searches, they can see curated news
+            urlString = "https://newsapi.org/v2/everything?q=\(String(describing: searchQuery!))&apiKey=\(String(describing: apiKey!))"
+        }
         
         guard let myURL = URL(string: urlString) else {
             print("Error: \(String(describing: link)) invalid url: \(urlString)")
