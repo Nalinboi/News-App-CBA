@@ -59,6 +59,7 @@ class ListViewCell: UITableViewCell {
     }
     
     func configureTitle() {
+        title.font = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight.bold)
         title.numberOfLines = 0
         title.adjustsFontSizeToFitWidth = true
         
@@ -71,7 +72,6 @@ class ListViewCell: UITableViewCell {
         thumbnail.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         thumbnail.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
 
-        thumbnail.heightAnchor.constraint(equalToConstant: 80).isActive = true
         thumbnail.widthAnchor.constraint(equalTo: thumbnail.heightAnchor, multiplier: 16/9).isActive = true
         
         
@@ -84,7 +84,7 @@ class ListViewCell: UITableViewCell {
     func setTitleConstraints() {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.topAnchor.constraint(equalTo: centerYAnchor, constant: 50).isActive = true
-        title.leadingAnchor.constraint(equalTo: thumbnail.leadingAnchor, constant: 20).isActive = true
+        title.leadingAnchor.constraint(equalTo: thumbnail.leadingAnchor, constant: 12).isActive = true
         title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
         
         //        title.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
