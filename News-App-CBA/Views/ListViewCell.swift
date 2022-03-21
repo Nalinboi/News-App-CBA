@@ -23,6 +23,15 @@ class ListViewCell: UITableViewCell {
         
         setThumbnailConstraints()
         setTitleConstraints()
+        
+        addShadow()
+    }
+    
+    func addShadow() {
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = .zero
+        self.layer.shadowOpacity = 1
+        self.layer.shadowRadius = 10
     }
     
     func set(article: Article) {
@@ -57,18 +66,31 @@ class ListViewCell: UITableViewCell {
     
     func setThumbnailConstraints() {
         thumbnail.translatesAutoresizingMaskIntoConstraints = false
-        thumbnail.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        
+        thumbnail.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -70).isActive = true
+        thumbnail.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         thumbnail.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
+
         thumbnail.heightAnchor.constraint(equalToConstant: 80).isActive = true
         thumbnail.widthAnchor.constraint(equalTo: thumbnail.heightAnchor, multiplier: 16/9).isActive = true
+        
+        
+        //        thumbnail.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        //        thumbnail.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12).isActive = true
+        //        thumbnail.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        //        thumbnail.widthAnchor.constraint(equalTo: thumbnail.heightAnchor, multiplier: 16/9).isActive = true
     }
     
     func setTitleConstraints() {
         title.translatesAutoresizingMaskIntoConstraints = false
-        title.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        title.leadingAnchor.constraint(equalTo: thumbnail.trailingAnchor, constant: 20).isActive = true
-        title.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        title.topAnchor.constraint(equalTo: centerYAnchor, constant: 50).isActive = true
+        title.leadingAnchor.constraint(equalTo: thumbnail.leadingAnchor, constant: 20).isActive = true
         title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
+        
+        //        title.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        //        title.leadingAnchor.constraint(equalTo: thumbnail.trailingAnchor, constant: 20).isActive = true
+        //        title.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        //        title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12).isActive = true
     }
     
 }

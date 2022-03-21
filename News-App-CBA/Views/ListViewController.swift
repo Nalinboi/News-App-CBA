@@ -60,7 +60,7 @@ class ListViewController: UIViewController {
         tableView.register(ListViewCell.self, forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 100
+        tableView.rowHeight = 400
         
         tableView.pin(to: view)
     }
