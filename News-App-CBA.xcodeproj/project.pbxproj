@@ -115,7 +115,6 @@
 				400AB98727D8ED1C00299FA1 /* Models */,
 				400AB98527D8ED0600299FA1 /* Views */,
 				400AB98627D8ED1200299FA1 /* ViewModels */,
-				400AB98827D8F0CA00299FA1 /* Controllers */,
 				400AB98927D8F11500299FA1 /* Resources */,
 				400AB96327D8AECE00299FA1 /* Info.plist */,
 			);
@@ -166,13 +165,6 @@
 				400AB98A27D8F2CC00299FA1 /* ArticleModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		400AB98827D8F0CA00299FA1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		400AB98927D8F11500299FA1 /* Resources */ = {
