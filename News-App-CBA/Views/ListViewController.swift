@@ -94,6 +94,7 @@ class ListViewController: UIViewController {
 }
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, UISearchBarDelegate {
+    // MARK: UISearchBarDelegate
     /// Updates everytime user presses search after typing something in the search bar.
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchController.searchBar.text else { // Safely unwrap text in search bar, otherwise return
@@ -106,15 +107,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         reloadTableViewData() // If the cancel button was pressed then we reload the table with the top headlines (no curated)
     }
     
-    // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
-    var articlesToShow: Int {
-        (articlesBeforePagination + (paginations * articlesPerPagination))
-    }
-    
-    var isEnd: Bool { // Computed value to see if the user has scrolled to the end.
-        articlesToShow >= articles.count
-    }
-    
+    // MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return whatever is less, either the articles according to paginations, or the max number of articles.
         return min(articlesToShow, articles.count)
@@ -128,6 +121,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         return cell
     }
     
+    // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true) // This deselects a row after it is tapped on by a user
         
@@ -140,6 +134,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         // }
     }
     
+    
+    // MARK: UIScrollViewDelegate
     // A function that gets triggered when you scroll to the bottom for pagination. 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let positionY = scrollView.contentOffset.y
@@ -160,6 +156,16 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
                 self.isPaginating = false
             }
         }
+    }
+    
+    // MARK: Helpers
+    // Computed value to see how many articles we should show based on paginations (how much they have scrolled)
+    var articlesToShow: Int {
+        (articlesBeforePagination + (paginations * articlesPerPagination))
+    }
+    
+    var isEnd: Bool { // Computed value to see if the user has scrolled to the end.
+        articlesToShow >= articles.count
     }
 }
 
