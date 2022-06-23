@@ -1,0 +1,6 @@
+framework module Pods_News_App_CBA_News_App_CBAUITests {
+  umbrella header "Pods-News-App-CBA-News-App-CBAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/paper-onboarding-pointzi-framework"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/paper-onboarding-pointzi-framework/paper_onboarding_pointzi.framework/Headers" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/pointzi"
+OTHER_CFLAGS = $(inherited) -DNS_BLOCK_ASSERTIONS=1 -DNDEBUG
+OTHER_LDFLAGS = $(inherited) -l"ObjC" -l"sqlite3" -l"xml2" -framework "CoreGraphics" -framework "CoreSpotlight" -framework "CoreTelephony" -framework "Foundation" -framework "UIKit" -framework "paper_onboarding_pointzi"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

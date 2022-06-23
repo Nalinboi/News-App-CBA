@@ -1,0 +1,2084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2C9E18FC8092387D689B4935538035F3 /* pointzi-framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 706E9D68EA5D71683D9AD3A68DE8743B /* Build configuration list for PBXAggregateTarget "pointzi-framework" */;
+			buildPhases = (
+			);
+			dependencies = (
+				51431F11C5993E0BDF0D47115F7F79FD /* PBXTargetDependency */,
+				1BFE238FECE031ADCAB44791E2602EC7 /* PBXTargetDependency */,
+			);
+			name = "pointzi-framework";
+		};
+		B9DBE7216FE71A04379F4227B636B052 /* pointzi-library */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 539DCB1765E52611E9D9910E6B8691DD /* Build configuration list for PBXAggregateTarget "pointzi-library" */;
+			buildPhases = (
+			);
+			dependencies = (
+				176BD5A2B0D63B5840A990F2D9314890 /* PBXTargetDependency */,
+				7C2FFC0B2A18DD3AE00EFB922D80069D /* PBXTargetDependency */,
+			);
+			name = "pointzi-library";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0017CB105FA12650322EF7212480A752 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		06A62D6E5B834087EEFEDC2B80F82DBA /* pz_link_off@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8DCCEAF30D425197E58CB5D6BE1F92 /* pz_link_off@1x.png */; };
+		0793488DE380E67839725180D17AC138 /* SHCoachmarkTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834B1BBB14B34087ADC184576D02B22C /* SHCoachmarkTipViewController.xib */; };
+		0A03839F0D51746DAE59990AE611E039 /* SHCoachmarkTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834B1BBB14B34087ADC184576D02B22C /* SHCoachmarkTipViewController.xib */; };
+		0B3FFF94F057F565F26CFEF35CDDB189 /* preview-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA3788479E8667A1640A522CD6CA378 /* preview-btn.png */; };
+		0C7BB822043AC94FB59038E8EAA9981B /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2C8893E4D2F7DCC9656991F1E17BA6 /* PageContainer.swift */; };
+		0F066ACC03589496F1FFA06031E0A0F8 /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD123BA8267C667F49F520061EA42A2F /* PaperOnboarding.swift */; };
+		0FB5BEEC22A508E44091485542D39534 /* pz_exit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6CE656A65ABDBD3D02CFD5E0BC900F2 /* pz_exit@3x.png */; };
+		107C7C70B94DFB933B62C8FA025FC640 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C2034D4D7101DD9FAD5861A586BA6 /* OnboardingContantViewItem.swift */; };
+		114B0BE6A65E808ED14D8FBE06633F13 /* pz_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344FEEEF3DA94E78A75CFFB30A497916 /* pz_camera@3x.png */; };
+		14CB4410297607065A497DEFFB7EFEE5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F02B645A2A6F0C3DD54EDC0F4425C38A /* Localizable.strings */; };
+		1520F1656408295DBEFEEFFD578DA15C /* pz_exit@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2189F3B2D053020B3E47FA9A9C1E722 /* pz_exit@1x.png */; };
+		153CF91E745E75F9BC2D1AA9924E6F8E /* pointzi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D81BFA3EC880389EEFE06AF467E7891 /* pointzi-logo.png */; };
+		154110FD6AA9D050ACEE484A486B2262 /* pz_backup@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2B51ACA03ED0EC11CFFE0140566FC6 /* pz_backup@1x.png */; };
+		15EB2275CE32F28CAD4E6E74862F90C8 /* Pods-News-App-CBA-News-App-CBAUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C37D1617A79AC3C1A4F58B0FFDE5AC1F /* Pods-News-App-CBA-News-App-CBAUITests-dummy.m */; };
+		15FF7BD9B01B2BBE69160E3BF55661D9 /* Pods-News-App-CBATests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F82BC1C3F2AFD48CC27F774313DD77E7 /* Pods-News-App-CBATests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		167CB9EFD13BF8BC2C6CE0A40C57A76D /* Pods-News-App-CBATests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF91191CEEEF5C56CDC5C05ED4872770 /* Pods-News-App-CBATests-dummy.m */; };
+		1C4FF6BD949EE0F16C00DDC2FC498FDA /* pz_alert@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB349787556669662D0048FA887CBCA /* pz_alert@3x.png */; };
+		1D422F6B3B8428F7FF50ECA707700B4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F02B645A2A6F0C3DD54EDC0F4425C38A /* Localizable.strings */; };
+		1D68A450F72CA55EFA62AC500483C63C /* pz_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F01F8E3890592F0BDC9300A43E9584C /* pz_pause@2x.png */; };
+		1D7A409BAAF2A65EA4198952F3AFB483 /* pz_sync_problem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5145A82EA96916A820FC0B12725A477B /* pz_sync_problem@3x.png */; };
+		204F011767794714E08F2F861CCECD47 /* SHPopTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B23F83E4F165A97C999C79647BE52F9 /* SHPopTipViewController.xib */; };
+		21E870C84385ADD45529A0CB265EC79C /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 268FB6FC88AEA7837994F8228D2117FF /* close@3x.png */; };
+		2234859F6C0FCE057509C26114E49913 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3D3EEB2E7D75CF5BA05920D7DEBFE /* GestureControl.swift */; };
+		2295288E0E3615AA7955A1FF893A1070 /* pz_check_circle@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06522006E61C3F6D12ECBD9D93EEB14C /* pz_check_circle@1x.png */; };
+		26F1EFAFF16DC110795E61230ACC7A7A /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA05397ED5C6648D6ABD5A50A5DBF20 /* Configuring.swift */; };
+		2730BD618E78AEE1DC3F592735D433F9 /* pz_sync_problem@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 715834FB1FA8A43F1761752168E01A14 /* pz_sync_problem@1x.png */; };
+		2775635F1A6D052F236A2B1781D42078 /* SHPopTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B23F83E4F165A97C999C79647BE52F9 /* SHPopTipViewController.xib */; };
+		29D0AFE6DB6F95502221A1CA9AFCDEB6 /* SHFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95B8D904E932820D50B43E5FCC827DCC /* SHFeedbackViewController.xib */; };
+		2A056800B97E9322C019AFD423FB1479 /* pz_link_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA3757035259801D523F208DA783215 /* pz_link_off@3x.png */; };
+		2A49DB78883AD71AA6C63415EBD178F9 /* pz_cloud_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCAB0FAC5F2216163A4F23930E9950 /* pz_cloud_off@2x.png */; };
+		2C94839D237223A09F1E873CA5B44BDA /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = EBFA1C747DF78A43501A6892C902D3E8 /* key.png */; };
+		2EACE9002819533BC0080416C323C063 /* information-circled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F98FBF25CA8D169FDB784318ABFAB3D /* information-circled@3x.png */; };
+		2EB17BCF56BA793D2CFBB788CE627411 /* pz_developer_mode@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 370654BC9EFC5DE6E95E23AC3D2F5BBF /* pz_developer_mode@1x.png */; };
+		2F22DF6CF937EB76D5ED5C9348402CE9 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA05397ED5C6648D6ABD5A50A5DBF20 /* Configuring.swift */; };
+		2FBEA2BFA03687B188A073FA23FC531F /* pz_refresh@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F914E4C0F699D57162D3E4C8DF763986 /* pz_refresh@1x.png */; };
+		312EE2B9F4E5F1CF62133EE69E43BB68 /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E94D71FCFE1AFC77B03923729E6F6EB /* camera@3x.png */; };
+		31DE04474BC47AC0E477FBC97B309B01 /* pz_system_update@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5649A7163555BB3F0CBF956052EF /* pz_system_update@1x.png */; };
+		34BC036307600BEEEC74DE2FAFC1EA1E /* hotels.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF705798C0456D72C932F278B259347 /* hotels.png */; };
+		3E1DCF55678DF7F61E46C9C2D2C05D39 /* pz_developer_mode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B74AE5206608204CDC285B929DE4FC /* pz_developer_mode@3x.png */; };
+		3E8FB826E78DC59C594B1393B389BCDF /* pz_system_update@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF95C345FFC784AC97C4F5C516930512 /* pz_system_update@3x.png */; };
+		41C7E216918C15DE8D57B0BE022A73D4 /* pz_backup@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB2B51ACA03ED0EC11CFFE0140566FC6 /* pz_backup@1x.png */; };
+		420C319B21A41BE8792BF55B4279CC5E /* pz_link_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA3757035259801D523F208DA783215 /* pz_link_off@3x.png */; };
+		42652E25AA33C49D874BFA4E05C078EA /* pz_cloud_off@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97ECE5ACEA9B87C0F11E76793C624CCA /* pz_cloud_off@1x.png */; };
+		4290282DE0A288E86496D85F31962903 /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30605CFBF3F5451CC4572813569EFAF8 /* PageViewItem.swift */; };
+		434AEBA01A2D73AF661A5415C28C3EE8 /* pz_check_circle@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06522006E61C3F6D12ECBD9D93EEB14C /* pz_check_circle@1x.png */; };
+		44B20C2E3B5D04B78276BD0BBC14AA8E /* pz_check_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F2438D07289A5770D8BB8E6B352AFD /* pz_check_circle@2x.png */; };
+		45AC3206ED7FE8ED3C1A12B645E02C7E /* SHCarouselBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E326731B411B002DA2E3E9AF63129 /* SHCarouselBridge.swift */; };
+		48E905ADDF9E468B75703AE9A9A118A2 /* pz_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888C1E7849E95DFC4288A2A9E7982B03 /* pz_pause@3x.png */; };
+		496ECC1EF43FD6F22313AACA27969D79 /* Pods-News-App-CBA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91D869F64FBB5C7C1E380B0AC3554158 /* Pods-News-App-CBA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4996A6A4D0D9AA964DB19E9E3FA3FCDE /* animation-pulse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 61FCDBA079DD4A3600AD8635966EFDCD /* animation-pulse.gif */; };
+		4A1FCD848612D1E8F5EFA16B372A464B /* pz_developer_mode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A428AFE0E32567EE784B113DE7B80D40 /* pz_developer_mode@2x.png */; };
+		4AADB8EA3ABFBCE3888CA084B3DED5EB /* help-circled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A749FFEEC35AE621A561E2A00A1C4D0C /* help-circled@3x.png */; };
+		4E862F359D5417E09ED8AA5D3938B5F2 /* stores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D42BF50B2F664399B5B45A651B73CCA /* stores.png */; };
+		4F83478174FD5D95B0875F700F7F811D /* pz_system_update@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF95C345FFC784AC97C4F5C516930512 /* pz_system_update@3x.png */; };
+		4FA40EFB19C36729D6A5B382DFE7AAF3 /* pz_sync_problem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2F1EA742D595096E216809BD9B5BC7 /* pz_sync_problem@2x.png */; };
+		51F5E89E096412E02627D036292E5AE9 /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30605CFBF3F5451CC4572813569EFAF8 /* PageViewItem.swift */; };
+		52638F87A2BB84355D017AA3CEFB03F5 /* pz_cloud_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAD31556739E1C344FE05EED7BE478F6 /* pz_cloud_off@3x.png */; };
+		54E789673A9C1B0DE91154344E055194 /* paper-onboarding-pointzi-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A486845DC26D2E199BB8B9B5C586F979 /* paper-onboarding-pointzi-library-dummy.m */; };
+		55AC7934D42365B36B6CD408DFBB6298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		55C93195E30207E949CB328520D76E2C /* pz_alert@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B1246BAD90B9EB86FA7E8CBE6350E /* pz_alert@1x.png */; };
+		55CBA0F76E5329D60CB3D2E5C9644CBD /* pz_system_update@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6201D374444AE28889C7FCE57921192 /* pz_system_update@2x.png */; };
+		5C0D117C594CCB2C826A4330F78EE8DD /* SHModalTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E20E0949124E759EE40816632CC2DA /* SHModalTipViewController.xib */; };
+		5C84A8FF6F8A06EFFC87E035B5330366 /* pz_sync@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE6F369191FD70499D8B32EC399F7EF /* pz_sync@1x.png */; };
+		5D31D34799E459D505400A2FBA729CA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		603A93F47D2179F67CB9F88EB2230C92 /* information-circled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F98FBF25CA8D169FDB784318ABFAB3D /* information-circled@3x.png */; };
+		6145692E35D0CDBE76DA7CC8FE760D77 /* String in Resources */ = {isa = PBXBuildFile; fileRef = 6AF9CD0607388CAAC8B11AE989267893 /* String */; };
+		6246A6CA49D5AFA53BFAA3672D22EEC0 /* pz_play_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B046E898FD26C343785BB02A673B0D3F /* pz_play_arrow@3x.png */; };
+		6249A88DB67A4E2156AAB9655488DB4E /* SHCarouselBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3E326731B411B002DA2E3E9AF63129 /* SHCarouselBridge.swift */; };
+		64F414A6B8776FDB585E1C29F7B3B3F2 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 268FB6FC88AEA7837994F8228D2117FF /* close@3x.png */; };
+		66DB4EF7D64F84AA9C0BC5BFA8CAFCB2 /* default-image-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C8554437BC7EDFAD4AAE72DD1A17C /* default-image-placeholder.png */; };
+		66FD0DA26DC056EC3AFB840E89A75B46 /* pz_sync_problem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2F1EA742D595096E216809BD9B5BC7 /* pz_sync_problem@2x.png */; };
+		689E2FF43E37BAC3B812C031BCE49C03 /* pz_backup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD3771728CF728DF31EC1FDC9D768BF /* pz_backup@3x.png */; };
+		69EFEB39AA8AFF8A3862272F901AA061 /* pz_exit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6CE656A65ABDBD3D02CFD5E0BC900F2 /* pz_exit@3x.png */; };
+		6B8784F393A79645901BB569EADF3297 /* pz_system_update@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6201D374444AE28889C7FCE57921192 /* pz_system_update@2x.png */; };
+		6C766B7C950D1683FC4DD8DC2E3A2EA7 /* preview-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA3788479E8667A1640A522CD6CA378 /* preview-btn.png */; };
+		6DC37C88BCA634565BC074FE36B40DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6F826BD1E9C371BE86CEB6FB6D15A240 /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E94D71FCFE1AFC77B03923729E6F6EB /* camera@3x.png */; };
+		7004573EDA788593ABA912EB0F516AC1 /* SHFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95B8D904E932820D50B43E5FCC827DCC /* SHFeedbackViewController.xib */; };
+		7121185DF66EAD1E90A18E53751B0A75 /* pz_check_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64AD83CE05D387531D7BD020CC6C92BD /* pz_check_circle@3x.png */; };
+		73D57A875834C514646068C295C283BC /* pz_play_arrow@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34DA115BF196C5D9D2000AB68370881D /* pz_play_arrow@1x.png */; };
+		77578D3E1E0D6B408F3E163D82E405E7 /* pz_link_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CE853249AD6746E16A8F59BF4C5EE1 /* pz_link_off@2x.png */; };
+		7868B14DE7B3C34386983C5B970A4696 /* pz_sync@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F2608386AE10E77F2E2CAB742A230B /* pz_sync@2x.png */; };
+		79B7D6C528F180F3FB348D2E42F77369 /* pz_cloud_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCAB0FAC5F2216163A4F23930E9950 /* pz_cloud_off@2x.png */; };
+		7B62B241F7300DB8AA8D3121BECE2ECB /* pz_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 917994496FD213F3E753B4FE1A8C9E4E /* pz_logo_white.png */; };
+		7E988F9CE2FA9451BD1404AB271DEB21 /* SHAlertSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD07766E3CBDA520BB39FEB51CE0CE9 /* SHAlertSettingsViewController.xib */; };
+		7F8F4BEA0085AAD8B920604EE7243ED9 /* paper-onboarding-pointzi-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 880CA999B6D29AC7A8C81DC8E5E1E683 /* paper-onboarding-pointzi-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82F35A3ED3D35F8B7FA557DC1CFA4972 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = EBFA1C747DF78A43501A6892C902D3E8 /* key.png */; };
+		83547210EB90BED8F98B8AAB7BF23696 /* pz_check_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F2438D07289A5770D8BB8E6B352AFD /* pz_check_circle@2x.png */; };
+		869D53DE94646A1487AA4ACADE7CD148 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3127C1C6761BDC2008F92836A5F4C /* OnboardingContentView.swift */; };
+		87DF2F6A0E16452B614AE2C3EFB1A4C4 /* pz_pause@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0875EF2A9756E05108F089325CC217 /* pz_pause@1x.png */; };
+		89FE571FA7FF876FA1121A486B3F8744 /* record@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4290F402D38ED8B982D7CDB97FFD1F5A /* record@3x.png */; };
+		8C78DFF482B4905744BE248C7138790F /* pz_play_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B046E898FD26C343785BB02A673B0D3F /* pz_play_arrow@3x.png */; };
+		8D3C7EC3DAF28339744C94468CAF4DB1 /* pz_refresh@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F914E4C0F699D57162D3E4C8DF763986 /* pz_refresh@1x.png */; };
+		8DBBBFF0FB60E049BE721EE02D7305FB /* pz_sync@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9F2ECCE75A49711D1B221D27758F9A /* pz_sync@3x.png */; };
+		8E251572902EC4FBEC4DE30DEAF88200 /* record@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4290F402D38ED8B982D7CDB97FFD1F5A /* record@3x.png */; };
+		8F33DA274B814207915FBF3BFDC7E99B /* pz_play_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C01077F4DF791C77DA5946E2B34A24 /* pz_play_arrow@2x.png */; };
+		93DD651003208E7C62AD01BA3B61211F /* SHChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1703641AEFDA82D722FAA8A722E824E /* SHChoiceViewController.xib */; };
+		9432EC2F61E37C7601849B9D7F5C56BA /* pz_developer_mode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A428AFE0E32567EE784B113DE7B80D40 /* pz_developer_mode@2x.png */; };
+		94CEFC843F6818EF1124C8D2476EF288 /* pz_exit@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2189F3B2D053020B3E47FA9A9C1E722 /* pz_exit@1x.png */; };
+		9542F8896F96A40B90A87C864866C938 /* help-circled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A749FFEEC35AE621A561E2A00A1C4D0C /* help-circled@3x.png */; };
+		95F80675C93BDD10D89894A7E0713823 /* Xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2B2B9E89EB1648A66126F6AA58F430 /* Xib */; };
+		961E1CC1F03AC400450B384E3E2AC0E4 /* pz_alert@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B1246BAD90B9EB86FA7E8CBE6350E /* pz_alert@1x.png */; };
+		9665A39965C17F2EF6470AE43089A333 /* pz_link_off@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8DCCEAF30D425197E58CB5D6BE1F92 /* pz_link_off@1x.png */; };
+		9820A916F1765C249F7A20ED3D5D4036 /* banks.png in Resources */ = {isa = PBXBuildFile; fileRef = 61028D3E7FD23D00B66495DB3D9AF389 /* banks.png */; };
+		99E70F559B8D1300DA939EF396C402DE /* paper-onboarding-pointzi-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC70BA197D9D16D516B883691C2D0F /* paper-onboarding-pointzi-framework-dummy.m */; };
+		9AEE365893F51FA3FAD8C74D1F6299E6 /* alert-circled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F31380D595FA44BCB596865382E5ED /* alert-circled@3x.png */; };
+		9BAA3D155FD1E097D1466D667A01C2A1 /* paper-onboarding-pointzi-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 010D25FCF43C57CDC418D8A5F6EA254E /* paper-onboarding-pointzi-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BBE2CFC7F3865C89C3D0714434418B3 /* pz_backup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7168D53E5E83A2C4D2ABC13494362BB3 /* pz_backup@2x.png */; };
+		9C293BD72EFB3D596898902D36AC3B52 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C2034D4D7101DD9FAD5861A586BA6 /* OnboardingContantViewItem.swift */; };
+		9C2FE684015B3C485AEAE591DFC3AB09 /* hotels.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF705798C0456D72C932F278B259347 /* hotels.png */; };
+		9C62B2EAFCDF76B984F9F5C52C967CE2 /* pz_exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE940F18506B7B5342C768B6057789EB /* pz_exit@2x.png */; };
+		9CF0E0E97C071971A13DC1C559B3BB6E /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207467C7D6C99E9AB647C44122C5ECC5 /* PageView.swift */; };
+		9EA88253F436A592D5A86E261125491E /* SHCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B02FB7BEABB7523FC4E485E086597 /* SHCarouselLayout.swift */; };
+		9F8CE7050108E126633A1C14D506371E /* pz_sync_problem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5145A82EA96916A820FC0B12725A477B /* pz_sync_problem@3x.png */; };
+		A006A5C08A139F034C0884368C8577A1 /* pz_backup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7168D53E5E83A2C4D2ABC13494362BB3 /* pz_backup@2x.png */; };
+		A1E3F26FA3FDD5EC873309C740C0D00A /* pz_cloud_off@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97ECE5ACEA9B87C0F11E76793C624CCA /* pz_cloud_off@1x.png */; };
+		ACA837BB7BEA4E86EF7F79C11B0F946B /* Pods-News-App-CBA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9CF128D8E2C50FD615C99D29E991A2 /* Pods-News-App-CBA-dummy.m */; };
+		AEC00CD5CCF06425D0E2CAD7E08207FB /* pz_camera@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC24F87E2675BA4BCB60B0181A3F46C1 /* pz_camera@1x.png */; };
+		B17E911CD6AE08F8303D8F2E5E81991F /* shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0B75DADBF7FFAB6D2614190217C28 /* shopping_cart.png */; };
+		B590DEC313346D0A8022CCDED3E34E7C /* pz_developer_mode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B74AE5206608204CDC285B929DE4FC /* pz_developer_mode@3x.png */; };
+		B613AB5472B114FED85AA48C7CA4BAA3 /* default-image-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C8554437BC7EDFAD4AAE72DD1A17C /* default-image-placeholder.png */; };
+		B87669235D4B9E51B4BB658163064FB5 /* pz_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F01F8E3890592F0BDC9300A43E9584C /* pz_pause@2x.png */; };
+		BBF1D0940B592D64811CA5D0C311AE0F /* pz_check_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64AD83CE05D387531D7BD020CC6C92BD /* pz_check_circle@3x.png */; };
+		C0A92A87A9934A60B42089D981D95A43 /* pz_exit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE940F18506B7B5342C768B6057789EB /* pz_exit@2x.png */; };
+		C1B0DC648F438A5EC6665D6D004C863E /* pz_pause@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C0875EF2A9756E05108F089325CC217 /* pz_pause@1x.png */; };
+		C26412F53902D04AA04692C2F063E8A7 /* String in Resources */ = {isa = PBXBuildFile; fileRef = 6AF9CD0607388CAAC8B11AE989267893 /* String */; };
+		C62A00007A6B6B5D656B2074EED2FB73 /* pointzi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D81BFA3EC880389EEFE06AF467E7891 /* pointzi-logo.png */; };
+		C67044074B32F2E03D846AEB51AC5E71 /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2C8893E4D2F7DCC9656991F1E17BA6 /* PageContainer.swift */; };
+		C7BDA93EC4E71F9A8154E507E59445B2 /* pz_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 344FEEEF3DA94E78A75CFFB30A497916 /* pz_camera@3x.png */; };
+		C80C62D50D37C69C47B887A87167FC18 /* shopping_cart.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0B75DADBF7FFAB6D2614190217C28 /* shopping_cart.png */; };
+		C867648BD350870BAEAD6CC416F2E794 /* animation-pulse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 61FCDBA079DD4A3600AD8635966EFDCD /* animation-pulse.gif */; };
+		CCC09EE43F4748C52826E81217A32B50 /* pz_backup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD3771728CF728DF31EC1FDC9D768BF /* pz_backup@3x.png */; };
+		CD44982EBC246E1228BDBDAF7D798E27 /* ConstraintsHalper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05659EC5E43B34DF045261992F67B7C0 /* ConstraintsHalper.swift */; };
+		CFA4CF18FA5F21FD5EF45888D84DA717 /* pz_alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1198A97EDCB58A001F1B92ABD1C6E09 /* pz_alert@2x.png */; };
+		D010D0353260E525AD9D6076644CE392 /* pz_play_arrow@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34DA115BF196C5D9D2000AB68370881D /* pz_play_arrow@1x.png */; };
+		D372D8AB2F43DF5BA164B6A3B55E7497 /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD123BA8267C667F49F520061EA42A2F /* PaperOnboarding.swift */; };
+		D66F71CCA9553A6E4F00FDCA21E5CD3B /* pz_sync@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE6F369191FD70499D8B32EC399F7EF /* pz_sync@1x.png */; };
+		D8701B749F5D168486A0DC9E264BFF40 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7D47DD0E710A1692255BA3C9125A9C /* wallet.png */; };
+		D98EF1DC2D4611AD819BB39E735E673B /* pz_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FEAB8906ABDEF4786CA967377B4A6F3 /* pz_camera@2x.png */; };
+		DDE786E739A360836ECACEE17AF654DC /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D70DDBC5BC498BB08047BAB38FBD32 /* FillAnimationView.swift */; };
+		DE3BE0361EB91488B21EA1B942824194 /* pz_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1868D4A25A8DD247DDB857CCCE4C19B0 /* pz_refresh@3x.png */; };
+		DE965AC52C7232BB75A8F2BF3F91EF69 /* SHCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B02FB7BEABB7523FC4E485E086597 /* SHCarouselLayout.swift */; };
+		E1256D0D2BF006076570A88AC069CA83 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B7D47DD0E710A1692255BA3C9125A9C /* wallet.png */; };
+		E20AD86890CABA9AB0AAA925AECEF318 /* alert-circled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F31380D595FA44BCB596865382E5ED /* alert-circled@3x.png */; };
+		E20D8231FB2B168BEB76A655EBCD508E /* ConstraintsHalper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05659EC5E43B34DF045261992F67B7C0 /* ConstraintsHalper.swift */; };
+		E3ADBA45D981BCC6202AD2CC6854EA25 /* pz_alert@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB349787556669662D0048FA887CBCA /* pz_alert@3x.png */; };
+		E4028B595E3256C7EB74A04FCAB317D7 /* Image in Resources */ = {isa = PBXBuildFile; fileRef = D5A6CA91E2E1F18C9299F9F769495B80 /* Image */; };
+		E434AA9594A1828630FD0B08A6A01894 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207467C7D6C99E9AB647C44122C5ECC5 /* PageView.swift */; };
+		E562426A73A13C089BB558D72D8CF93A /* Pods-News-App-CBA-News-App-CBAUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9F18EA985973C57A163CB973D7D9AC /* Pods-News-App-CBA-News-App-CBAUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69637227BBF7E7686CCEC3D925E69F6 /* SHAlertSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD07766E3CBDA520BB39FEB51CE0CE9 /* SHAlertSettingsViewController.xib */; };
+		E89DFF77BC7CE34DE070BB58622F9127 /* pz_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888C1E7849E95DFC4288A2A9E7982B03 /* pz_pause@3x.png */; };
+		E9A61B9E4752F8753F0BDF4B8357C355 /* stores.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D42BF50B2F664399B5B45A651B73CCA /* stores.png */; };
+		EAF01F7BF4123D91F1905390EEC31CE8 /* pz_sync@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9F2ECCE75A49711D1B221D27758F9A /* pz_sync@3x.png */; };
+		EB1E8A8A44D5D19D0DA03ADAEE50EDF6 /* pz_developer_mode@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 370654BC9EFC5DE6E95E23AC3D2F5BBF /* pz_developer_mode@1x.png */; };
+		EB48DA46665E3287BC6DC041B402A42E /* pz_play_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C01077F4DF791C77DA5946E2B34A24 /* pz_play_arrow@2x.png */; };
+		EBFCBBC061FA10E3944E410546129E3B /* pz_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FEAB8906ABDEF4786CA967377B4A6F3 /* pz_camera@2x.png */; };
+		EC0F59D68C81646E52B67B239C6B7E8D /* pz_camera@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC24F87E2675BA4BCB60B0181A3F46C1 /* pz_camera@1x.png */; };
+		EDDF60BF5C57AA9160A68D8E39CB52B2 /* pz_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1F9458FE9C5FCF336809AC3C91214C /* pz_refresh@2x.png */; };
+		EE4A8B67DE6994BBA12A0198695C6440 /* pz_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1868D4A25A8DD247DDB857CCCE4C19B0 /* pz_refresh@3x.png */; };
+		EEA7B6A738F06C09E637C8F88E214E3D /* SHModalTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E20E0949124E759EE40816632CC2DA /* SHModalTipViewController.xib */; };
+		EEB46665D82A55CE6216FE9D1CEAAC00 /* pz_sync_problem@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 715834FB1FA8A43F1761752168E01A14 /* pz_sync_problem@1x.png */; };
+		EEB494DB81300972DC7A38CDB04E2161 /* pz_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1F9458FE9C5FCF336809AC3C91214C /* pz_refresh@2x.png */; };
+		EF5A9F432F4CAC92F3B3459292CEE077 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3D3EEB2E7D75CF5BA05920D7DEBFE /* GestureControl.swift */; };
+		EF837AEA95D8E41E6923EC5CBEB8FAE3 /* banks.png in Resources */ = {isa = PBXBuildFile; fileRef = 61028D3E7FD23D00B66495DB3D9AF389 /* banks.png */; };
+		EFBDE77A97150523F514DB456A073253 /* pz_alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1198A97EDCB58A001F1B92ABD1C6E09 /* pz_alert@2x.png */; };
+		F0658EA78B936156817869DF32FB6703 /* SHChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1703641AEFDA82D722FAA8A722E824E /* SHChoiceViewController.xib */; };
+		F0C97EC4AC52AF45D975D3BE0A7C011B /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D70DDBC5BC498BB08047BAB38FBD32 /* FillAnimationView.swift */; };
+		F20790A375C5D53E108E79B401F7941F /* Xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2B2B9E89EB1648A66126F6AA58F430 /* Xib */; };
+		F4B96E90466F3B1DB84E46B1CA45962F /* pz_sync@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F2608386AE10E77F2E2CAB742A230B /* pz_sync@2x.png */; };
+		F77CDB23AB70E332443476A4E5AEF82D /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D3127C1C6761BDC2008F92836A5F4C /* OnboardingContentView.swift */; };
+		F7E45D2B72AF283E112BEEDB2268D421 /* Image in Resources */ = {isa = PBXBuildFile; fileRef = D5A6CA91E2E1F18C9299F9F769495B80 /* Image */; };
+		FA711ED2E7A5C90E1901EDFF03CD96D5 /* pz_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 917994496FD213F3E753B4FE1A8C9E4E /* pz_logo_white.png */; };
+		FDEDC5B97C38919BF4ED2B24C227FF6E /* pz_system_update@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5649A7163555BB3F0CBF956052EF /* pz_system_update@1x.png */; };
+		FE4067025C222294BDF4876E9F6B39AC /* pz_cloud_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAD31556739E1C344FE05EED7BE478F6 /* pz_cloud_off@3x.png */; };
+		FF6A8A73BD63518AA115587BB8FE1C32 /* pz_link_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CE853249AD6746E16A8F59BF4C5EE1 /* pz_link_off@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C098B3EEF515558F63EA41779B15021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA04EEA18AD939D40408AC34CD7C0788;
+			remoteInfo = "pointzi-framework-Pointzi";
+		};
+		23C6274162491BC96C3117CF5AD33ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9E18FC8092387D689B4935538035F3;
+			remoteInfo = "pointzi-framework";
+		};
+		549A7BF445E3A4A2CC163239110D1377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6993C6262F3B026D809ECAA3762528AA;
+			remoteInfo = "pointzi-library-Pointzi";
+		};
+		5A49D77F0E0B461AFDB392BD22A4B61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E60FF959A8713978A25D1EF43E3D83;
+			remoteInfo = "Pods-News-App-CBA";
+		};
+		6D393B5660009760788EBD89F864FB87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A764C6B46495AB82D1CBFB8F279F76C;
+			remoteInfo = "paper-onboarding-pointzi-library";
+		};
+		77977F06BA776FF6675881D8BC3CCDAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9E18FC8092387D689B4935538035F3;
+			remoteInfo = "pointzi-framework";
+		};
+		88A66D7D07CF6203E9B2A10FA0213EEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38E301C6D334B5B7763014E0B57AFDBF;
+			remoteInfo = "paper-onboarding-pointzi-framework";
+		};
+		A9F53253E0A6A366F46F5B93146F86D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38E301C6D334B5B7763014E0B57AFDBF;
+			remoteInfo = "paper-onboarding-pointzi-framework";
+		};
+		E6ED900B1C1C1AC681AA87B78C865BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38E301C6D334B5B7763014E0B57AFDBF;
+			remoteInfo = "paper-onboarding-pointzi-framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010D25FCF43C57CDC418D8A5F6EA254E /* paper-onboarding-pointzi-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "paper-onboarding-pointzi-library-umbrella.h"; path = "../paper-onboarding-pointzi-library/paper-onboarding-pointzi-library-umbrella.h"; sourceTree = "<group>"; };
+		046C84C93F0FF52ECA4B6F79194A5EE3 /* SHFriendlyNameObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHFriendlyNameObject.h; path = Pointzi/Headers/SHFriendlyNameObject.h; sourceTree = "<group>"; };
+		04E9CB66334A5EE0E69C15D91EC0E78E /* StreetHawkCore_Pointzi-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StreetHawkCore_Pointzi-Swift.h"; path = "Pointzi/Headers/StreetHawkCore_Pointzi-Swift.h"; sourceTree = "<group>"; };
+		04F2438D07289A5770D8BB8E6B352AFD /* pz_check_circle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_check_circle@2x.png"; path = "Pointzi/Assets/Image/pz_check_circle@2x.png"; sourceTree = "<group>"; };
+		05659EC5E43B34DF045261992F67B7C0 /* ConstraintsHalper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintsHalper.swift; path = "Sources/paper-onboarding/Helpers/ConstraintsHalper.swift"; sourceTree = "<group>"; };
+		0596A0DE47F15F8CC2D360618517FC03 /* Pods-News-App-CBA-News-App-CBAUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-News-App-CBA-News-App-CBAUITests-resources.sh"; sourceTree = "<group>"; };
+		05B0EDE9C64B65542B4C8F5531CA9D2B /* SHTipWebElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipWebElement.h; path = Pointzi/Headers/SHTipWebElement.h; sourceTree = "<group>"; };
+		06522006E61C3F6D12ECBD9D93EEB14C /* pz_check_circle@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_check_circle@1x.png"; path = "Pointzi/Assets/Image/pz_check_circle@1x.png"; sourceTree = "<group>"; };
+		0FDE147679CC6538DAAE3524A07FB8BF /* SHTipImageElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipImageElement.h; path = Pointzi/Headers/SHTipImageElement.h; sourceTree = "<group>"; };
+		12020E5DA0307F2FF21BF9BC6339AE59 /* SHTipSeriesElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipSeriesElement.h; path = Pointzi/Headers/SHTipSeriesElement.h; sourceTree = "<group>"; };
+		12A99BB3BA485D6A07D2ABA17EB951EC /* Pods-News-App-CBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-News-App-CBA.release.xcconfig"; sourceTree = "<group>"; };
+		140AF56B01AA338D807D67D5A33DAB19 /* paper-onboarding-pointzi-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "paper-onboarding-pointzi-library.debug.xcconfig"; path = "../paper-onboarding-pointzi-library/paper-onboarding-pointzi-library.debug.xcconfig"; sourceTree = "<group>"; };
+		14B46ADA450A2523446975C86B817D7E /* SHTipElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipElement.h; path = Pointzi/Headers/SHTipElement.h; sourceTree = "<group>"; };
+		15FB21380D1E4EAC138F678B0515C850 /* SHUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHUtils.h; path = Pointzi/Headers/SHUtils.h; sourceTree = "<group>"; };
+		16D2F23E885B8D5B5A5D7DF21019BF0C /* pointzi-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "pointzi-framework.release.xcconfig"; sourceTree = "<group>"; };
+		1868D4A25A8DD247DDB857CCCE4C19B0 /* pz_refresh@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_refresh@3x.png"; path = "Pointzi/Assets/Image/pz_refresh@3x.png"; sourceTree = "<group>"; };
+		19A6A9C4FCBA489D07224FE842F43F56 /* pointzi-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "pointzi-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		19BC517A2549498FA4BA70107A100078 /* paper-onboarding-pointzi-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "paper-onboarding-pointzi-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		19C522D7C5F792D1CD92E5268F885514 /* Pods-News-App-CBA-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-News-App-CBA-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A8DCCEAF30D425197E58CB5D6BE1F92 /* pz_link_off@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_link_off@1x.png"; path = "Pointzi/Assets/Image/pz_link_off@1x.png"; sourceTree = "<group>"; };
+		1B7D47DD0E710A1692255BA3C9125A9C /* wallet.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = wallet.png; path = Pointzi/Assets/Image/wallet.png; sourceTree = "<group>"; };
+		1DEAA06ED180A823730D98F27788193D /* paper-onboarding-pointzi-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "paper-onboarding-pointzi-library-prefix.pch"; path = "../paper-onboarding-pointzi-library/paper-onboarding-pointzi-library-prefix.pch"; sourceTree = "<group>"; };
+		1F1F9458FE9C5FCF336809AC3C91214C /* pz_refresh@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_refresh@2x.png"; path = "Pointzi/Assets/Image/pz_refresh@2x.png"; sourceTree = "<group>"; };
+		207467C7D6C99E9AB647C44122C5ECC5 /* PageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageView.swift; path = "Sources/paper-onboarding/PageView/PageView.swift"; sourceTree = "<group>"; };
+		25769B1414673E47C30EFB9B504A9211 /* SHOnDemandLanucher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHOnDemandLanucher.h; path = Pointzi/Headers/SHOnDemandLanucher.h; sourceTree = "<group>"; };
+		268FB6FC88AEA7837994F8228D2117FF /* close@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "close@3x.png"; path = "Pointzi/Assets/Image/close@3x.png"; sourceTree = "<group>"; };
+		26A066F8EE0900220EBB50FD25372D57 /* SHFeedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHFeedObject.h; path = Pointzi/Headers/SHFeedObject.h; sourceTree = "<group>"; };
+		28AC8DA06F304B88FEB6FF58349ADA8A /* SHTipCoachmarkElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipCoachmarkElement.h; path = Pointzi/Headers/SHTipCoachmarkElement.h; sourceTree = "<group>"; };
+		2D2F1EA742D595096E216809BD9B5BC7 /* pz_sync_problem@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_sync_problem@2x.png"; path = "Pointzi/Assets/Image/pz_sync_problem@2x.png"; sourceTree = "<group>"; };
+		2D3E326731B411B002DA2E3E9AF63129 /* SHCarouselBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCarouselBridge.swift; path = "Sources/paper-onboarding/Pointzi/SHCarouselBridge.swift"; sourceTree = "<group>"; };
+		2D42BF50B2F664399B5B45A651B73CCA /* stores.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = stores.png; path = Pointzi/Assets/Image/stores.png; sourceTree = "<group>"; };
+		2DD3771728CF728DF31EC1FDC9D768BF /* pz_backup@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_backup@3x.png"; path = "Pointzi/Assets/Image/pz_backup@3x.png"; sourceTree = "<group>"; };
+		2E01D471D34966A22F487D279702270F /* Pods-News-App-CBA-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-News-App-CBA-acknowledgements.plist"; sourceTree = "<group>"; };
+		3018BEDF209FAE6AB067460B6A09F7E0 /* paper-onboarding-pointzi-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "paper-onboarding-pointzi-library"; path = "libpaper-onboarding-pointzi-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30605CFBF3F5451CC4572813569EFAF8 /* PageViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewItem.swift; path = "Sources/paper-onboarding/PageView/Item/PageViewItem.swift"; sourceTree = "<group>"; };
+		34286B043BB2DF23460E67222143218C /* StreetHawkCore_Pointzi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StreetHawkCore_Pointzi.h; path = Pointzi/Headers/StreetHawkCore_Pointzi.h; sourceTree = "<group>"; };
+		344FEEEF3DA94E78A75CFFB30A497916 /* pz_camera@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_camera@3x.png"; path = "Pointzi/Assets/Image/pz_camera@3x.png"; sourceTree = "<group>"; };
+		34DA115BF196C5D9D2000AB68370881D /* pz_play_arrow@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_play_arrow@1x.png"; path = "Pointzi/Assets/Image/pz_play_arrow@1x.png"; sourceTree = "<group>"; };
+		370654BC9EFC5DE6E95E23AC3D2F5BBF /* pz_developer_mode@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_developer_mode@1x.png"; path = "Pointzi/Assets/Image/pz_developer_mode@1x.png"; sourceTree = "<group>"; };
+		37F2608386AE10E77F2E2CAB742A230B /* pz_sync@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_sync@2x.png"; path = "Pointzi/Assets/Image/pz_sync@2x.png"; sourceTree = "<group>"; };
+		3822AF7F8403292F0B2CFEE4461C1B4E /* SHTipLauncherElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipLauncherElement.h; path = Pointzi/Headers/SHTipLauncherElement.h; sourceTree = "<group>"; };
+		388C9752D1121B11186FFFF5533D7831 /* Pods-News-App-CBA-News-App-CBAUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-News-App-CBA-News-App-CBAUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		388DA4065406C60C620763F887FA8EA2 /* Pods-News-App-CBA-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-News-App-CBA-resources.sh"; sourceTree = "<group>"; };
+		390D9F6473F930A19E595E362E015549 /* Pods-News-App-CBA-News-App-CBAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-News-App-CBA-News-App-CBAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39E20E0949124E759EE40816632CC2DA /* SHModalTipViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SHModalTipViewController.xib; path = Pointzi/Assets/Xib/SHModalTipViewController.xib; sourceTree = "<group>"; };
+		3B23F83E4F165A97C999C79647BE52F9 /* SHPopTipViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SHPopTipViewController.xib; path = Pointzi/Assets/Xib/SHPopTipViewController.xib; sourceTree = "<group>"; };
+		3C9F18EA985973C57A163CB973D7D9AC /* Pods-News-App-CBA-News-App-CBAUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-News-App-CBA-News-App-CBAUITests-umbrella.h"; sourceTree = "<group>"; };
+		3DBCAB0FAC5F2216163A4F23930E9950 /* pz_cloud_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_cloud_off@2x.png"; path = "Pointzi/Assets/Image/pz_cloud_off@2x.png"; sourceTree = "<group>"; };
+		3E94D71FCFE1AFC77B03923729E6F6EB /* camera@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera@3x.png"; path = "Pointzi/Assets/Image/camera@3x.png"; sourceTree = "<group>"; };
+		4290F402D38ED8B982D7CDB97FFD1F5A /* record@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "record@3x.png"; path = "Pointzi/Assets/Image/record@3x.png"; sourceTree = "<group>"; };
+		46797C5139EA7E711542B106D461672B /* paper-onboarding-pointzi-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-pointzi-framework-prefix.pch"; sourceTree = "<group>"; };
+		49911002E3A0F480233D9C7C6C2D4094 /* pointzi-framework-Pointzi */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "pointzi-framework-Pointzi"; path = Pointzi.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C40AC83F74BA34751ADF6C7543444CB /* Pods-News-App-CBATests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-News-App-CBATests.modulemap"; sourceTree = "<group>"; };
+		4E1C8554437BC7EDFAD4AAE72DD1A17C /* default-image-placeholder.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "default-image-placeholder.png"; path = "Pointzi/Assets/Image/default-image-placeholder.png"; sourceTree = "<group>"; };
+		4F07D4E791EAC92711EDF8CB872A96FA /* Pointzi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pointzi.h; path = Pointzi/Headers/Pointzi.h; sourceTree = "<group>"; };
+		501468BAC5E1E3BB6F7206BC276BF64B /* SHTipFeedbackElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipFeedbackElement.h; path = Pointzi/Headers/SHTipFeedbackElement.h; sourceTree = "<group>"; };
+		5145A82EA96916A820FC0B12725A477B /* pz_sync_problem@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_sync_problem@3x.png"; path = "Pointzi/Assets/Image/pz_sync_problem@3x.png"; sourceTree = "<group>"; };
+		515AC11D0F5D946657815749DE45CF3C /* Pods-News-App-CBATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-News-App-CBATests.debug.xcconfig"; sourceTree = "<group>"; };
+		53C73E71B0F87BF734405AE029B34BFB /* SHTipInteractions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipInteractions.h; path = Pointzi/Headers/SHTipInteractions.h; sourceTree = "<group>"; };
+		565B5154464AF546B53CEA81D64948EF /* SHFAQBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHFAQBridge.h; path = Pointzi/Headers/SHFAQBridge.h; sourceTree = "<group>"; };
+		57484C28FF5D9F7A4460BC13CB67E26D /* Pods-News-App-CBA-News-App-CBAUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-News-App-CBA-News-App-CBAUITests-Info.plist"; sourceTree = "<group>"; };
+		5AA05397ED5C6648D6ABD5A50A5DBF20 /* Configuring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuring.swift; path = "Sources/paper-onboarding/Helpers/Configuring.swift"; sourceTree = "<group>"; };
+		5C4BAA8397161924DE66EDA4A39A817C /* Pods-News-App-CBATests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-News-App-CBATests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61028D3E7FD23D00B66495DB3D9AF389 /* banks.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = banks.png; path = Pointzi/Assets/Image/banks.png; sourceTree = "<group>"; };
+		611502052475692CB4F09497C5ED4846 /* Pods-News-App-CBA-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-News-App-CBA-frameworks.sh"; sourceTree = "<group>"; };
+		616C8658175C06CE1C8D5E1C04F47470 /* PushDataForApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PushDataForApplication.h; path = Pointzi/Headers/PushDataForApplication.h; sourceTree = "<group>"; };
+		617D640E1BFD841B434872817112404E /* paper-onboarding-pointzi-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "paper-onboarding-pointzi-framework.release.xcconfig"; sourceTree = "<group>"; };
+		61C635B1F0B68ED7B79D63FA8B08862E /* Pods-News-App-CBA-News-App-CBAUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-News-App-CBA-News-App-CBAUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		61FCDBA079DD4A3600AD8635966EFDCD /* animation-pulse.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = "animation-pulse.gif"; path = "Pointzi/Assets/Image/animation-pulse.gif"; sourceTree = "<group>"; };
+		625078BA3C1DE4848292FAD4053994A5 /* paper-onboarding-pointzi-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "paper-onboarding-pointzi-library.release.xcconfig"; path = "../paper-onboarding-pointzi-library/paper-onboarding-pointzi-library.release.xcconfig"; sourceTree = "<group>"; };
+		646ACFBEC8DDD2C92F1D1A7C53AAE82F /* SHTipTextElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipTextElement.h; path = Pointzi/Headers/SHTipTextElement.h; sourceTree = "<group>"; };
+		64AD83CE05D387531D7BD020CC6C92BD /* pz_check_circle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_check_circle@3x.png"; path = "Pointzi/Assets/Image/pz_check_circle@3x.png"; sourceTree = "<group>"; };
+		65D70DDBC5BC498BB08047BAB38FBD32 /* FillAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillAnimationView.swift; path = "Sources/paper-onboarding/FillAnimatinView/FillAnimationView.swift"; sourceTree = "<group>"; };
+		6AF9CD0607388CAAC8B11AE989267893 /* String */ = {isa = PBXFileReference; includeInIndex = 1; name = String; path = Pointzi/Assets/String; sourceTree = "<group>"; };
+		6D6F30591DEECE66097A6AE3829A9FEC /* PointziSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PointziSDK.h; path = Pointzi/Headers/PointziSDK.h; sourceTree = "<group>"; };
+		6F98FBF25CA8D169FDB784318ABFAB3D /* information-circled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "information-circled@3x.png"; path = "Pointzi/Assets/Image/information-circled@3x.png"; sourceTree = "<group>"; };
+		6FA9CFADFA37AB8C5E895359D551B9FA /* SHPointziApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHPointziApi.h; path = Pointzi/Headers/SHPointziApi.h; sourceTree = "<group>"; };
+		715834FB1FA8A43F1761752168E01A14 /* pz_sync_problem@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_sync_problem@1x.png"; path = "Pointzi/Assets/Image/pz_sync_problem@1x.png"; sourceTree = "<group>"; };
+		7168D53E5E83A2C4D2ABC13494362BB3 /* pz_backup@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_backup@2x.png"; path = "Pointzi/Assets/Image/pz_backup@2x.png"; sourceTree = "<group>"; };
+		71F31380D595FA44BCB596865382E5ED /* alert-circled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alert-circled@3x.png"; path = "Pointzi/Assets/Image/alert-circled@3x.png"; sourceTree = "<group>"; };
+		72F3D3EEB2E7D75CF5BA05920D7DEBFE /* GestureControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = "Sources/paper-onboarding/GestureControl/GestureControl.swift"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7341D1F7FF4D522654554180576613BC /* Pods-News-App-CBA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-News-App-CBA-Info.plist"; sourceTree = "<group>"; };
+		76CBBB7D316FE6FE7CEF16A42884DACE /* SHApp+Feed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SHApp+Feed.h"; path = "Pointzi/Headers/SHApp+Feed.h"; sourceTree = "<group>"; };
+		782324DC15EE9A02CB24593A12006085 /* SHTipCarouselElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipCarouselElement.h; path = Pointzi/Headers/SHTipCarouselElement.h; sourceTree = "<group>"; };
+		7C0875EF2A9756E05108F089325CC217 /* pz_pause@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_pause@1x.png"; path = "Pointzi/Assets/Image/pz_pause@1x.png"; sourceTree = "<group>"; };
+		7D81BFA3EC880389EEFE06AF467E7891 /* pointzi-logo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pointzi-logo.png"; path = "Pointzi/Assets/Image/pointzi-logo.png"; sourceTree = "<group>"; };
+		7F01F8E3890592F0BDC9300A43E9584C /* pz_pause@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_pause@2x.png"; path = "Pointzi/Assets/Image/pz_pause@2x.png"; sourceTree = "<group>"; };
+		834B1BBB14B34087ADC184576D02B22C /* SHCoachmarkTipViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SHCoachmarkTipViewController.xib; path = Pointzi/Assets/Xib/SHCoachmarkTipViewController.xib; sourceTree = "<group>"; };
+		8661A66825FC4CF59E1FA54C5EFA866B /* SHTipDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipDef.h; path = Pointzi/Headers/SHTipDef.h; sourceTree = "<group>"; };
+		880CA999B6D29AC7A8C81DC8E5E1E683 /* paper-onboarding-pointzi-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "paper-onboarding-pointzi-framework-umbrella.h"; sourceTree = "<group>"; };
+		888C1E7849E95DFC4288A2A9E7982B03 /* pz_pause@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_pause@3x.png"; path = "Pointzi/Assets/Image/pz_pause@3x.png"; sourceTree = "<group>"; };
+		8C4EB9602F5F26AAAD3F6D25E1D841CB /* paper-onboarding-pointzi-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "paper-onboarding-pointzi-framework"; path = paper_onboarding_pointzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA3788479E8667A1640A522CD6CA378 /* preview-btn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "preview-btn.png"; path = "Pointzi/Assets/Image/preview-btn.png"; sourceTree = "<group>"; };
+		8FEAB8906ABDEF4786CA967377B4A6F3 /* pz_camera@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_camera@2x.png"; path = "Pointzi/Assets/Image/pz_camera@2x.png"; sourceTree = "<group>"; };
+		917994496FD213F3E753B4FE1A8C9E4E /* pz_logo_white.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = pz_logo_white.png; path = Pointzi/Assets/Image/pz_logo_white.png; sourceTree = "<group>"; };
+		91D869F64FBB5C7C1E380B0AC3554158 /* Pods-News-App-CBA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-News-App-CBA-umbrella.h"; sourceTree = "<group>"; };
+		938381599AE91129D305A68BD328AAF4 /* pointzi-library-Pointzi */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "pointzi-library-Pointzi"; path = Pointzi.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C01077F4DF791C77DA5946E2B34A24 /* pz_play_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_play_arrow@2x.png"; path = "Pointzi/Assets/Image/pz_play_arrow@2x.png"; sourceTree = "<group>"; };
+		94D69775E6C668EA8675490604CFB921 /* PZApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PZApp.h; path = Pointzi/Headers/PZApp.h; sourceTree = "<group>"; };
+		95B8D904E932820D50B43E5FCC827DCC /* SHFeedbackViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SHFeedbackViewController.xib; path = Pointzi/Assets/Xib/SHFeedbackViewController.xib; sourceTree = "<group>"; };
+		95CA6B4B7BA44C7DDE79F60AB90CBE50 /* Pods-News-App-CBATests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-News-App-CBATests-Info.plist"; sourceTree = "<group>"; };
+		96CE853249AD6746E16A8F59BF4C5EE1 /* pz_link_off@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_link_off@2x.png"; path = "Pointzi/Assets/Image/pz_link_off@2x.png"; sourceTree = "<group>"; };
+		97ECE5ACEA9B87C0F11E76793C624CCA /* pz_cloud_off@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_cloud_off@1x.png"; path = "Pointzi/Assets/Image/pz_cloud_off@1x.png"; sourceTree = "<group>"; };
+		97FF3F23B735ABAEC1E9F9E6CEEA33BB /* paper-onboarding-pointzi-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "paper-onboarding-pointzi-framework-Info.plist"; sourceTree = "<group>"; };
+		99BC70BA197D9D16D516B883691C2D0F /* paper-onboarding-pointzi-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "paper-onboarding-pointzi-framework-dummy.m"; sourceTree = "<group>"; };
+		9BE6F369191FD70499D8B32EC399F7EF /* pz_sync@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_sync@1x.png"; path = "Pointzi/Assets/Image/pz_sync@1x.png"; sourceTree = "<group>"; };
+		9C8635956DFD0E40D3039DAEFBE72120 /* SHFeedConditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHFeedConditions.h; path = Pointzi/Headers/SHFeedConditions.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7B1246BAD90B9EB86FA7E8CBE6350E /* pz_alert@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_alert@1x.png"; path = "Pointzi/Assets/Image/pz_alert@1x.png"; sourceTree = "<group>"; };
+		A1703641AEFDA82D722FAA8A722E824E /* SHChoiceViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SHChoiceViewController.xib; path = Pointzi/Assets/Xib/SHChoiceViewController.xib; sourceTree = "<group>"; };
+		A21B02FB7BEABB7523FC4E485E086597 /* SHCarouselLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCarouselLayout.swift; path = "Sources/paper-onboarding/Pointzi/SHCarouselLayout.swift"; sourceTree = "<group>"; };
+		A428AFE0E32567EE784B113DE7B80D40 /* pz_developer_mode@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_developer_mode@2x.png"; path = "Pointzi/Assets/Image/pz_developer_mode@2x.png"; sourceTree = "<group>"; };
+		A486845DC26D2E199BB8B9B5C586F979 /* paper-onboarding-pointzi-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "paper-onboarding-pointzi-library-dummy.m"; path = "../paper-onboarding-pointzi-library/paper-onboarding-pointzi-library-dummy.m"; sourceTree = "<group>"; };
+		A4FD624664A69AEF862CEE6069194D68 /* SHObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHObject.h; path = Pointzi/Headers/SHObject.h; sourceTree = "<group>"; };
+		A688D26D461D8E8F9B610C23238B7671 /* Pods-News-App-CBA-News-App-CBAUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-News-App-CBA-News-App-CBAUITests.modulemap"; sourceTree = "<group>"; };
+		A69D0E2930E50EE533BB165F300C9D13 /* pointzi-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "pointzi-library.debug.xcconfig"; path = "../pointzi-library/pointzi-library.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C1034CFC76C27437A4A1C37CA614E5 /* Pods-News-App-CBATests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-News-App-CBATests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A749FFEEC35AE621A561E2A00A1C4D0C /* help-circled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "help-circled@3x.png"; path = "Pointzi/Assets/Image/help-circled@3x.png"; sourceTree = "<group>"; };
+		A93540B575BC91B119941B38299D0F39 /* ResourceBundle-Pointzi-pointzi-library-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-Pointzi-pointzi-library-Info.plist"; path = "../pointzi-library/ResourceBundle-Pointzi-pointzi-library-Info.plist"; sourceTree = "<group>"; };
+		AAB2A515689C185F07C2E1F3AAA6AD51 /* Pods-News-App-CBATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-News-App-CBATests.release.xcconfig"; sourceTree = "<group>"; };
+		AB8E24224CECFB15B0B8F68F12D57010 /* Pods-News-App-CBA-News-App-CBAUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-News-App-CBA-News-App-CBAUITests"; path = Pods_News_App_CBA_News_App_CBAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9CF128D8E2C50FD615C99D29E991A2 /* Pods-News-App-CBA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-News-App-CBA-dummy.m"; sourceTree = "<group>"; };
+		ABD07766E3CBDA520BB39FEB51CE0CE9 /* SHAlertSettingsViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SHAlertSettingsViewController.xib; path = Pointzi/Assets/Xib/SHAlertSettingsViewController.xib; sourceTree = "<group>"; };
+		AC2C8893E4D2F7DCC9656991F1E17BA6 /* PageContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageContainer.swift; path = "Sources/paper-onboarding/PageView/PageContainerView/PageContainer.swift"; sourceTree = "<group>"; };
+		AE940F18506B7B5342C768B6057789EB /* pz_exit@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_exit@2x.png"; path = "Pointzi/Assets/Image/pz_exit@2x.png"; sourceTree = "<group>"; };
+		B046E898FD26C343785BB02A673B0D3F /* pz_play_arrow@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_play_arrow@3x.png"; path = "Pointzi/Assets/Image/pz_play_arrow@3x.png"; sourceTree = "<group>"; };
+		B1144F73FD51BA6B450A1EDC02D0D440 /* Pods-News-App-CBA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-News-App-CBA.debug.xcconfig"; sourceTree = "<group>"; };
+		B1198A97EDCB58A001F1B92ABD1C6E09 /* pz_alert@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_alert@2x.png"; path = "Pointzi/Assets/Image/pz_alert@2x.png"; sourceTree = "<group>"; };
+		B17D35CDECBFB25C710D22F8C62C5AD4 /* SHTipAnimationElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipAnimationElement.h; path = Pointzi/Headers/SHTipAnimationElement.h; sourceTree = "<group>"; };
+		B35C49B265ED37B2907EA06CBACB573E /* Pods-News-App-CBATests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-News-App-CBATests"; path = Pods_News_App_CBATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACA6CD42A29C0BBCC8B484C2024E5BD /* Pods-News-App-CBA */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-News-App-CBA"; path = Pods_News_App_CBA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB349787556669662D0048FA887CBCA /* pz_alert@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_alert@3x.png"; path = "Pointzi/Assets/Image/pz_alert@3x.png"; sourceTree = "<group>"; };
+		BC24F87E2675BA4BCB60B0181A3F46C1 /* pz_camera@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_camera@1x.png"; path = "Pointzi/Assets/Image/pz_camera@1x.png"; sourceTree = "<group>"; };
+		BD123BA8267C667F49F520061EA42A2F /* PaperOnboarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaperOnboarding.swift; path = "Sources/paper-onboarding/PaperOnboarding.swift"; sourceTree = "<group>"; };
+		BE2B2B9E89EB1648A66126F6AA58F430 /* Xib */ = {isa = PBXFileReference; includeInIndex = 1; name = Xib; path = Pointzi/Assets/Xib; sourceTree = "<group>"; };
+		BF91191CEEEF5C56CDC5C05ED4872770 /* Pods-News-App-CBATests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-News-App-CBATests-dummy.m"; sourceTree = "<group>"; };
+		BFFD417D7D5D9DC6F3E87858E116AFFC /* SHTipBaseElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipBaseElement.h; path = Pointzi/Headers/SHTipBaseElement.h; sourceTree = "<group>"; };
+		C09C2034D4D7101DD9FAD5861A586BA6 /* OnboardingContantViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContantViewItem.swift; path = "Sources/paper-onboarding/OnboardingContantView/Item/OnboardingContantViewItem.swift"; sourceTree = "<group>"; };
+		C2189F3B2D053020B3E47FA9A9C1E722 /* pz_exit@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_exit@1x.png"; path = "Pointzi/Assets/Image/pz_exit@1x.png"; sourceTree = "<group>"; };
+		C37D1617A79AC3C1A4F58B0FFDE5AC1F /* Pods-News-App-CBA-News-App-CBAUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-News-App-CBA-News-App-CBAUITests-dummy.m"; sourceTree = "<group>"; };
+		C6201D374444AE28889C7FCE57921192 /* pz_system_update@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_system_update@2x.png"; path = "Pointzi/Assets/Image/pz_system_update@2x.png"; sourceTree = "<group>"; };
+		C9A94332A17E621BE54D3D0556B4EC0A /* ResourceBundle-Pointzi-pointzi-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Pointzi-pointzi-framework-Info.plist"; sourceTree = "<group>"; };
+		C9D3127C1C6761BDC2008F92836A5F4C /* OnboardingContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingContentView.swift; path = "Sources/paper-onboarding/OnboardingContantView/OnboardingContentView.swift"; sourceTree = "<group>"; };
+		CA2B411E29385487BA7148DA54221690 /* pointzi-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "pointzi-library.release.xcconfig"; path = "../pointzi-library/pointzi-library.release.xcconfig"; sourceTree = "<group>"; };
+		CAD31556739E1C344FE05EED7BE478F6 /* pz_cloud_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_cloud_off@3x.png"; path = "Pointzi/Assets/Image/pz_cloud_off@3x.png"; sourceTree = "<group>"; };
+		CCA3757035259801D523F208DA783215 /* pz_link_off@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_link_off@3x.png"; path = "Pointzi/Assets/Image/pz_link_off@3x.png"; sourceTree = "<group>"; };
+		CCFC5649A7163555BB3F0CBF956052EF /* pz_system_update@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_system_update@1x.png"; path = "Pointzi/Assets/Image/pz_system_update@1x.png"; sourceTree = "<group>"; };
+		CE134C7B2302781094DAE604961CDF1F /* paper-onboarding-pointzi-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "paper-onboarding-pointzi-library.modulemap"; path = "../paper-onboarding-pointzi-library/paper-onboarding-pointzi-library.modulemap"; sourceTree = "<group>"; };
+		CE9F2ECCE75A49711D1B221D27758F9A /* pz_sync@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_sync@3x.png"; path = "Pointzi/Assets/Image/pz_sync@3x.png"; sourceTree = "<group>"; };
+		CF95C345FFC784AC97C4F5C516930512 /* pz_system_update@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_system_update@3x.png"; path = "Pointzi/Assets/Image/pz_system_update@3x.png"; sourceTree = "<group>"; };
+		D4B41F817ACC00BD5A07BDFCB04EA37A /* SHTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTypes.h; path = Pointzi/Headers/SHTypes.h; sourceTree = "<group>"; };
+		D5A6CA91E2E1F18C9299F9F769495B80 /* Image */ = {isa = PBXFileReference; includeInIndex = 1; name = Image; path = Pointzi/Assets/Image; sourceTree = "<group>"; };
+		D5CBA768F2A6D7C0840A0846435460E0 /* libPointzi.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPointzi.a; path = Pointzi/libPointzi.a; sourceTree = "<group>"; };
+		D6BBBB048D3CFE10B5215797A6A1029C /* SHBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHBaseViewController.h; path = Pointzi/Headers/SHBaseViewController.h; sourceTree = "<group>"; };
+		D8B74AE5206608204CDC285B929DE4FC /* pz_developer_mode@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_developer_mode@3x.png"; path = "Pointzi/Assets/Image/pz_developer_mode@3x.png"; sourceTree = "<group>"; };
+		D9796C659B084201150862549B83A605 /* SHInstall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHInstall.h; path = Pointzi/Headers/SHInstall.h; sourceTree = "<group>"; };
+		DAF0B75DADBF7FFAB6D2614190217C28 /* shopping_cart.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = shopping_cart.png; path = Pointzi/Assets/Image/shopping_cart.png; sourceTree = "<group>"; };
+		DB2B51ACA03ED0EC11CFFE0140566FC6 /* pz_backup@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_backup@1x.png"; path = "Pointzi/Assets/Image/pz_backup@1x.png"; sourceTree = "<group>"; };
+		E28F6D9890DA6EB91922AED3FEE46BE6 /* paper-onboarding-pointzi-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "paper-onboarding-pointzi-framework.modulemap"; sourceTree = "<group>"; };
+		E6CE656A65ABDBD3D02CFD5E0BC900F2 /* pz_exit@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_exit@3x.png"; path = "Pointzi/Assets/Image/pz_exit@3x.png"; sourceTree = "<group>"; };
+		E8A7198F178D2118DC2F5AD0B5AD0D7A /* SHTipTargetElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipTargetElement.h; path = Pointzi/Headers/SHTipTargetElement.h; sourceTree = "<group>"; };
+		EBFA1C747DF78A43501A6892C902D3E8 /* key.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = key.png; path = Pointzi/Assets/Image/key.png; sourceTree = "<group>"; };
+		ECE775F73745E8F3792A4C5484C9B87A /* Pods-News-App-CBA-News-App-CBAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-News-App-CBA-News-App-CBAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F02B645A2A6F0C3DD54EDC0F4425C38A /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Pointzi/Assets/String/Localizable.strings; sourceTree = "<group>"; };
+		F4A2DC209FCBF379662D3662D120C8E9 /* SHTipManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipManager.h; path = Pointzi/Headers/SHTipManager.h; sourceTree = "<group>"; };
+		F59EFEC65281CAC6C3313E241ED73A40 /* SHTipDismissElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipDismissElement.h; path = Pointzi/Headers/SHTipDismissElement.h; sourceTree = "<group>"; };
+		F64E1108B119C29D11F9304F673F74EF /* Pods-News-App-CBA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-News-App-CBA.modulemap"; sourceTree = "<group>"; };
+		F82BC1C3F2AFD48CC27F774313DD77E7 /* Pods-News-App-CBATests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-News-App-CBATests-umbrella.h"; sourceTree = "<group>"; };
+		F914E4C0F699D57162D3E4C8DF763986 /* pz_refresh@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "pz_refresh@1x.png"; path = "Pointzi/Assets/Image/pz_refresh@1x.png"; sourceTree = "<group>"; };
+		FA8B68671E4D658E395DE5F45802F72F /* PZPreviewModeBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PZPreviewModeBridge.h; path = Pointzi/Headers/PZPreviewModeBridge.h; sourceTree = "<group>"; };
+		FD65FF16227EE21806E458DEED539431 /* SHTipButtonElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SHTipButtonElement.h; path = Pointzi/Headers/SHTipButtonElement.h; sourceTree = "<group>"; };
+		FDD09B811AB23F54F4AD61325E09D105 /* Pods-News-App-CBA-News-App-CBAUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-News-App-CBA-News-App-CBAUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FDF705798C0456D72C932F278B259347 /* hotels.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = hotels.png; path = Pointzi/Assets/Image/hotels.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D286DA816F612122844C63DC82F2F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40FA66CCCA0D01CB03F9CB6F8572AB7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AC7934D42365B36B6CD408DFBB6298 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A38A4E590387E5AA4887CF6A31C4E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864CA8B086085F579B2D3DC2C5F647EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91051E357ACA61B59716B441B1C6A4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC37C88BCA634565BC074FE36B40DB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B737FC6F3F9F7DC062E70E9166C058B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0017CB105FA12650322EF7212480A752 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF860AF60B4AED91DE4EBDD6C7468AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D31D34799E459D505400A2FBA729CA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A4E81AD1C91C58B308D7A70F5F1AD3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19A6A9C4FCBA489D07224FE842F43F56 /* pointzi-framework.debug.xcconfig */,
+				16D2F23E885B8D5B5A5D7DF21019BF0C /* pointzi-framework.release.xcconfig */,
+				A69D0E2930E50EE533BB165F300C9D13 /* pointzi-library.debug.xcconfig */,
+				CA2B411E29385487BA7148DA54221690 /* pointzi-library.release.xcconfig */,
+				C9A94332A17E621BE54D3D0556B4EC0A /* ResourceBundle-Pointzi-pointzi-framework-Info.plist */,
+				A93540B575BC91B119941B38299D0F39 /* ResourceBundle-Pointzi-pointzi-library-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/pointzi-framework";
+			sourceTree = "<group>";
+		};
+		0F023FD2D9F9CBDB0FD28BB080E0F9AF /* pointzi */ = {
+			isa = PBXGroup;
+			children = (
+				81E9C219538EF8B19C5FDE931506F6B5 /* Lite */,
+				02A4E81AD1C91C58B308D7A70F5F1AD3 /* Support Files */,
+			);
+			name = pointzi;
+			path = pointzi;
+			sourceTree = "<group>";
+		};
+		1B743B87411D50991A59690D556CF367 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6D9890DA6EB91922AED3FEE46BE6 /* paper-onboarding-pointzi-framework.modulemap */,
+				99BC70BA197D9D16D516B883691C2D0F /* paper-onboarding-pointzi-framework-dummy.m */,
+				97FF3F23B735ABAEC1E9F9E6CEEA33BB /* paper-onboarding-pointzi-framework-Info.plist */,
+				46797C5139EA7E711542B106D461672B /* paper-onboarding-pointzi-framework-prefix.pch */,
+				880CA999B6D29AC7A8C81DC8E5E1E683 /* paper-onboarding-pointzi-framework-umbrella.h */,
+				19BC517A2549498FA4BA70107A100078 /* paper-onboarding-pointzi-framework.debug.xcconfig */,
+				617D640E1BFD841B434872817112404E /* paper-onboarding-pointzi-framework.release.xcconfig */,
+				CE134C7B2302781094DAE604961CDF1F /* paper-onboarding-pointzi-library.modulemap */,
+				A486845DC26D2E199BB8B9B5C586F979 /* paper-onboarding-pointzi-library-dummy.m */,
+				1DEAA06ED180A823730D98F27788193D /* paper-onboarding-pointzi-library-prefix.pch */,
+				010D25FCF43C57CDC418D8A5F6EA254E /* paper-onboarding-pointzi-library-umbrella.h */,
+				140AF56B01AA338D807D67D5A33DAB19 /* paper-onboarding-pointzi-library.debug.xcconfig */,
+				625078BA3C1DE4848292FAD4053994A5 /* paper-onboarding-pointzi-library.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/paper-onboarding-pointzi-framework";
+			sourceTree = "<group>";
+		};
+		4FEAE8295ED2FC7C17611A8A702131CC /* Pods-News-App-CBA */ = {
+			isa = PBXGroup;
+			children = (
+				F64E1108B119C29D11F9304F673F74EF /* Pods-News-App-CBA.modulemap */,
+				19C522D7C5F792D1CD92E5268F885514 /* Pods-News-App-CBA-acknowledgements.markdown */,
+				2E01D471D34966A22F487D279702270F /* Pods-News-App-CBA-acknowledgements.plist */,
+				AB9CF128D8E2C50FD615C99D29E991A2 /* Pods-News-App-CBA-dummy.m */,
+				611502052475692CB4F09497C5ED4846 /* Pods-News-App-CBA-frameworks.sh */,
+				7341D1F7FF4D522654554180576613BC /* Pods-News-App-CBA-Info.plist */,
+				388DA4065406C60C620763F887FA8EA2 /* Pods-News-App-CBA-resources.sh */,
+				91D869F64FBB5C7C1E380B0AC3554158 /* Pods-News-App-CBA-umbrella.h */,
+				B1144F73FD51BA6B450A1EDC02D0D440 /* Pods-News-App-CBA.debug.xcconfig */,
+				12A99BB3BA485D6A07D2ABA17EB951EC /* Pods-News-App-CBA.release.xcconfig */,
+			);
+			name = "Pods-News-App-CBA";
+			path = "Target Support Files/Pods-News-App-CBA";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		637CCB7E4603F329D561FFDCD2BF0C1C /* Pods-News-App-CBATests */ = {
+			isa = PBXGroup;
+			children = (
+				4C40AC83F74BA34751ADF6C7543444CB /* Pods-News-App-CBATests.modulemap */,
+				5C4BAA8397161924DE66EDA4A39A817C /* Pods-News-App-CBATests-acknowledgements.markdown */,
+				A6C1034CFC76C27437A4A1C37CA614E5 /* Pods-News-App-CBATests-acknowledgements.plist */,
+				BF91191CEEEF5C56CDC5C05ED4872770 /* Pods-News-App-CBATests-dummy.m */,
+				95CA6B4B7BA44C7DDE79F60AB90CBE50 /* Pods-News-App-CBATests-Info.plist */,
+				F82BC1C3F2AFD48CC27F774313DD77E7 /* Pods-News-App-CBATests-umbrella.h */,
+				515AC11D0F5D946657815749DE45CF3C /* Pods-News-App-CBATests.debug.xcconfig */,
+				AAB2A515689C185F07C2E1F3AAA6AD51 /* Pods-News-App-CBATests.release.xcconfig */,
+			);
+			name = "Pods-News-App-CBATests";
+			path = "Target Support Files/Pods-News-App-CBATests";
+			sourceTree = "<group>";
+		};
+		657323CC2C9E01BF163E8FEDCC886AC2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FEAE8295ED2FC7C17611A8A702131CC /* Pods-News-App-CBA */,
+				8C0E8FE9F8380F904D7A1596EC26BCC7 /* Pods-News-App-CBA-News-App-CBAUITests */,
+				637CCB7E4603F329D561FFDCD2BF0C1C /* Pods-News-App-CBATests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		81E9C219538EF8B19C5FDE931506F6B5 /* Lite */ = {
+			isa = PBXGroup;
+			children = (
+				4F07D4E791EAC92711EDF8CB872A96FA /* Pointzi.h */,
+				6D6F30591DEECE66097A6AE3829A9FEC /* PointziSDK.h */,
+				616C8658175C06CE1C8D5E1C04F47470 /* PushDataForApplication.h */,
+				94D69775E6C668EA8675490604CFB921 /* PZApp.h */,
+				FA8B68671E4D658E395DE5F45802F72F /* PZPreviewModeBridge.h */,
+				76CBBB7D316FE6FE7CEF16A42884DACE /* SHApp+Feed.h */,
+				D6BBBB048D3CFE10B5215797A6A1029C /* SHBaseViewController.h */,
+				565B5154464AF546B53CEA81D64948EF /* SHFAQBridge.h */,
+				9C8635956DFD0E40D3039DAEFBE72120 /* SHFeedConditions.h */,
+				26A066F8EE0900220EBB50FD25372D57 /* SHFeedObject.h */,
+				046C84C93F0FF52ECA4B6F79194A5EE3 /* SHFriendlyNameObject.h */,
+				D9796C659B084201150862549B83A605 /* SHInstall.h */,
+				A4FD624664A69AEF862CEE6069194D68 /* SHObject.h */,
+				25769B1414673E47C30EFB9B504A9211 /* SHOnDemandLanucher.h */,
+				6FA9CFADFA37AB8C5E895359D551B9FA /* SHPointziApi.h */,
+				B17D35CDECBFB25C710D22F8C62C5AD4 /* SHTipAnimationElement.h */,
+				BFFD417D7D5D9DC6F3E87858E116AFFC /* SHTipBaseElement.h */,
+				FD65FF16227EE21806E458DEED539431 /* SHTipButtonElement.h */,
+				782324DC15EE9A02CB24593A12006085 /* SHTipCarouselElement.h */,
+				28AC8DA06F304B88FEB6FF58349ADA8A /* SHTipCoachmarkElement.h */,
+				8661A66825FC4CF59E1FA54C5EFA866B /* SHTipDef.h */,
+				F59EFEC65281CAC6C3313E241ED73A40 /* SHTipDismissElement.h */,
+				14B46ADA450A2523446975C86B817D7E /* SHTipElement.h */,
+				501468BAC5E1E3BB6F7206BC276BF64B /* SHTipFeedbackElement.h */,
+				0FDE147679CC6538DAAE3524A07FB8BF /* SHTipImageElement.h */,
+				53C73E71B0F87BF734405AE029B34BFB /* SHTipInteractions.h */,
+				3822AF7F8403292F0B2CFEE4461C1B4E /* SHTipLauncherElement.h */,
+				F4A2DC209FCBF379662D3662D120C8E9 /* SHTipManager.h */,
+				12020E5DA0307F2FF21BF9BC6339AE59 /* SHTipSeriesElement.h */,
+				E8A7198F178D2118DC2F5AD0B5AD0D7A /* SHTipTargetElement.h */,
+				646ACFBEC8DDD2C92F1D1A7C53AAE82F /* SHTipTextElement.h */,
+				05B0EDE9C64B65542B4C8F5531CA9D2B /* SHTipWebElement.h */,
+				D4B41F817ACC00BD5A07BDFCB04EA37A /* SHTypes.h */,
+				15FB21380D1E4EAC138F678B0515C850 /* SHUtils.h */,
+				34286B043BB2DF23460E67222143218C /* StreetHawkCore_Pointzi.h */,
+				04E9CB66334A5EE0E69C15D91EC0E78E /* StreetHawkCore_Pointzi-Swift.h */,
+				B4665DC90A1E7EAD166640D556F99E2F /* Frameworks */,
+				AF07E95E80D68E1CCD277D20D820B883 /* Resources */,
+			);
+			name = Lite;
+			sourceTree = "<group>";
+		};
+		859B288956A312BDA649D559D30FD57E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC5E3120FC0A1253BA3C838B9622E6E6 /* paper-onboarding-pointzi */,
+				0F023FD2D9F9CBDB0FD28BB080E0F9AF /* pointzi */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C0E8FE9F8380F904D7A1596EC26BCC7 /* Pods-News-App-CBA-News-App-CBAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A688D26D461D8E8F9B610C23238B7671 /* Pods-News-App-CBA-News-App-CBAUITests.modulemap */,
+				388C9752D1121B11186FFFF5533D7831 /* Pods-News-App-CBA-News-App-CBAUITests-acknowledgements.markdown */,
+				61C635B1F0B68ED7B79D63FA8B08862E /* Pods-News-App-CBA-News-App-CBAUITests-acknowledgements.plist */,
+				C37D1617A79AC3C1A4F58B0FFDE5AC1F /* Pods-News-App-CBA-News-App-CBAUITests-dummy.m */,
+				FDD09B811AB23F54F4AD61325E09D105 /* Pods-News-App-CBA-News-App-CBAUITests-frameworks.sh */,
+				57484C28FF5D9F7A4460BC13CB67E26D /* Pods-News-App-CBA-News-App-CBAUITests-Info.plist */,
+				0596A0DE47F15F8CC2D360618517FC03 /* Pods-News-App-CBA-News-App-CBAUITests-resources.sh */,
+				3C9F18EA985973C57A163CB973D7D9AC /* Pods-News-App-CBA-News-App-CBAUITests-umbrella.h */,
+				ECE775F73745E8F3792A4C5484C9B87A /* Pods-News-App-CBA-News-App-CBAUITests.debug.xcconfig */,
+				390D9F6473F930A19E595E362E015549 /* Pods-News-App-CBA-News-App-CBAUITests.release.xcconfig */,
+			);
+			name = "Pods-News-App-CBA-News-App-CBAUITests";
+			path = "Target Support Files/Pods-News-App-CBA-News-App-CBAUITests";
+			sourceTree = "<group>";
+		};
+		8C35876A7178969592C9F9B007719183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C4EB9602F5F26AAAD3F6D25E1D841CB /* paper-onboarding-pointzi-framework */,
+				3018BEDF209FAE6AB067460B6A09F7E0 /* paper-onboarding-pointzi-library */,
+				BACA6CD42A29C0BBCC8B484C2024E5BD /* Pods-News-App-CBA */,
+				AB8E24224CECFB15B0B8F68F12D57010 /* Pods-News-App-CBA-News-App-CBAUITests */,
+				B35C49B265ED37B2907EA06CBACB573E /* Pods-News-App-CBATests */,
+				49911002E3A0F480233D9C7C6C2D4094 /* pointzi-framework-Pointzi */,
+				938381599AE91129D305A68BD328AAF4 /* pointzi-library-Pointzi */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF07E95E80D68E1CCD277D20D820B883 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71F31380D595FA44BCB596865382E5ED /* alert-circled@3x.png */,
+				61FCDBA079DD4A3600AD8635966EFDCD /* animation-pulse.gif */,
+				61028D3E7FD23D00B66495DB3D9AF389 /* banks.png */,
+				3E94D71FCFE1AFC77B03923729E6F6EB /* camera@3x.png */,
+				268FB6FC88AEA7837994F8228D2117FF /* close@3x.png */,
+				4E1C8554437BC7EDFAD4AAE72DD1A17C /* default-image-placeholder.png */,
+				A749FFEEC35AE621A561E2A00A1C4D0C /* help-circled@3x.png */,
+				FDF705798C0456D72C932F278B259347 /* hotels.png */,
+				D5A6CA91E2E1F18C9299F9F769495B80 /* Image */,
+				6F98FBF25CA8D169FDB784318ABFAB3D /* information-circled@3x.png */,
+				EBFA1C747DF78A43501A6892C902D3E8 /* key.png */,
+				F02B645A2A6F0C3DD54EDC0F4425C38A /* Localizable.strings */,
+				7D81BFA3EC880389EEFE06AF467E7891 /* pointzi-logo.png */,
+				8FA3788479E8667A1640A522CD6CA378 /* preview-btn.png */,
+				9E7B1246BAD90B9EB86FA7E8CBE6350E /* pz_alert@1x.png */,
+				B1198A97EDCB58A001F1B92ABD1C6E09 /* pz_alert@2x.png */,
+				BBB349787556669662D0048FA887CBCA /* pz_alert@3x.png */,
+				DB2B51ACA03ED0EC11CFFE0140566FC6 /* pz_backup@1x.png */,
+				7168D53E5E83A2C4D2ABC13494362BB3 /* pz_backup@2x.png */,
+				2DD3771728CF728DF31EC1FDC9D768BF /* pz_backup@3x.png */,
+				BC24F87E2675BA4BCB60B0181A3F46C1 /* pz_camera@1x.png */,
+				8FEAB8906ABDEF4786CA967377B4A6F3 /* pz_camera@2x.png */,
+				344FEEEF3DA94E78A75CFFB30A497916 /* pz_camera@3x.png */,
+				06522006E61C3F6D12ECBD9D93EEB14C /* pz_check_circle@1x.png */,
+				04F2438D07289A5770D8BB8E6B352AFD /* pz_check_circle@2x.png */,
+				64AD83CE05D387531D7BD020CC6C92BD /* pz_check_circle@3x.png */,
+				97ECE5ACEA9B87C0F11E76793C624CCA /* pz_cloud_off@1x.png */,
+				3DBCAB0FAC5F2216163A4F23930E9950 /* pz_cloud_off@2x.png */,
+				CAD31556739E1C344FE05EED7BE478F6 /* pz_cloud_off@3x.png */,
+				370654BC9EFC5DE6E95E23AC3D2F5BBF /* pz_developer_mode@1x.png */,
+				A428AFE0E32567EE784B113DE7B80D40 /* pz_developer_mode@2x.png */,
+				D8B74AE5206608204CDC285B929DE4FC /* pz_developer_mode@3x.png */,
+				C2189F3B2D053020B3E47FA9A9C1E722 /* pz_exit@1x.png */,
+				AE940F18506B7B5342C768B6057789EB /* pz_exit@2x.png */,
+				E6CE656A65ABDBD3D02CFD5E0BC900F2 /* pz_exit@3x.png */,
+				1A8DCCEAF30D425197E58CB5D6BE1F92 /* pz_link_off@1x.png */,
+				96CE853249AD6746E16A8F59BF4C5EE1 /* pz_link_off@2x.png */,
+				CCA3757035259801D523F208DA783215 /* pz_link_off@3x.png */,
+				917994496FD213F3E753B4FE1A8C9E4E /* pz_logo_white.png */,
+				7C0875EF2A9756E05108F089325CC217 /* pz_pause@1x.png */,
+				7F01F8E3890592F0BDC9300A43E9584C /* pz_pause@2x.png */,
+				888C1E7849E95DFC4288A2A9E7982B03 /* pz_pause@3x.png */,
+				34DA115BF196C5D9D2000AB68370881D /* pz_play_arrow@1x.png */,
+				93C01077F4DF791C77DA5946E2B34A24 /* pz_play_arrow@2x.png */,
+				B046E898FD26C343785BB02A673B0D3F /* pz_play_arrow@3x.png */,
+				F914E4C0F699D57162D3E4C8DF763986 /* pz_refresh@1x.png */,
+				1F1F9458FE9C5FCF336809AC3C91214C /* pz_refresh@2x.png */,
+				1868D4A25A8DD247DDB857CCCE4C19B0 /* pz_refresh@3x.png */,
+				9BE6F369191FD70499D8B32EC399F7EF /* pz_sync@1x.png */,
+				37F2608386AE10E77F2E2CAB742A230B /* pz_sync@2x.png */,
+				CE9F2ECCE75A49711D1B221D27758F9A /* pz_sync@3x.png */,
+				715834FB1FA8A43F1761752168E01A14 /* pz_sync_problem@1x.png */,
+				2D2F1EA742D595096E216809BD9B5BC7 /* pz_sync_problem@2x.png */,
+				5145A82EA96916A820FC0B12725A477B /* pz_sync_problem@3x.png */,
+				CCFC5649A7163555BB3F0CBF956052EF /* pz_system_update@1x.png */,
+				C6201D374444AE28889C7FCE57921192 /* pz_system_update@2x.png */,
+				CF95C345FFC784AC97C4F5C516930512 /* pz_system_update@3x.png */,
+				4290F402D38ED8B982D7CDB97FFD1F5A /* record@3x.png */,
+				ABD07766E3CBDA520BB39FEB51CE0CE9 /* SHAlertSettingsViewController.xib */,
+				A1703641AEFDA82D722FAA8A722E824E /* SHChoiceViewController.xib */,
+				834B1BBB14B34087ADC184576D02B22C /* SHCoachmarkTipViewController.xib */,
+				95B8D904E932820D50B43E5FCC827DCC /* SHFeedbackViewController.xib */,
+				39E20E0949124E759EE40816632CC2DA /* SHModalTipViewController.xib */,
+				DAF0B75DADBF7FFAB6D2614190217C28 /* shopping_cart.png */,
+				3B23F83E4F165A97C999C79647BE52F9 /* SHPopTipViewController.xib */,
+				2D42BF50B2F664399B5B45A651B73CCA /* stores.png */,
+				6AF9CD0607388CAAC8B11AE989267893 /* String */,
+				1B7D47DD0E710A1692255BA3C9125A9C /* wallet.png */,
+				BE2B2B9E89EB1648A66126F6AA58F430 /* Xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B4665DC90A1E7EAD166640D556F99E2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5CBA768F2A6D7C0840A0846435460E0 /* libPointzi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC5E3120FC0A1253BA3C838B9622E6E6 /* paper-onboarding-pointzi */ = {
+			isa = PBXGroup;
+			children = (
+				5AA05397ED5C6648D6ABD5A50A5DBF20 /* Configuring.swift */,
+				05659EC5E43B34DF045261992F67B7C0 /* ConstraintsHalper.swift */,
+				65D70DDBC5BC498BB08047BAB38FBD32 /* FillAnimationView.swift */,
+				72F3D3EEB2E7D75CF5BA05920D7DEBFE /* GestureControl.swift */,
+				C09C2034D4D7101DD9FAD5861A586BA6 /* OnboardingContantViewItem.swift */,
+				C9D3127C1C6761BDC2008F92836A5F4C /* OnboardingContentView.swift */,
+				AC2C8893E4D2F7DCC9656991F1E17BA6 /* PageContainer.swift */,
+				207467C7D6C99E9AB647C44122C5ECC5 /* PageView.swift */,
+				30605CFBF3F5451CC4572813569EFAF8 /* PageViewItem.swift */,
+				BD123BA8267C667F49F520061EA42A2F /* PaperOnboarding.swift */,
+				2D3E326731B411B002DA2E3E9AF63129 /* SHCarouselBridge.swift */,
+				A21B02FB7BEABB7523FC4E485E086597 /* SHCarouselLayout.swift */,
+				1B743B87411D50991A59690D556CF367 /* Support Files */,
+			);
+			name = "paper-onboarding-pointzi";
+			path = "paper-onboarding-pointzi";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				859B288956A312BDA649D559D30FD57E /* Pods */,
+				8C35876A7178969592C9F9B007719183 /* Products */,
+				657323CC2C9E01BF163E8FEDCC886AC2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		003D6A691B0331AC870BD4B79014D4A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BAA3D155FD1E097D1466D667A01C2A1 /* paper-onboarding-pointzi-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D0C2BDD9142B4FA19C3B769264F6B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E562426A73A13C089BB558D72D8CF93A /* Pods-News-App-CBA-News-App-CBAUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3649A7D49A85424BF66C66770EB039 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FF7BD9B01B2BBE69160E3BF55661D9 /* Pods-News-App-CBATests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6F615796868991D3DD61A01DEAAFF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496ECC1EF43FD6F22313AACA27969D79 /* Pods-News-App-CBA-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07C03896A8C7546F163332EDB757234 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8F4BEA0085AAD8B920604EE7243ED9 /* paper-onboarding-pointzi-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F8AEE31F6F707950E12A510591BB8A4 /* Pods-News-App-CBA-News-App-CBAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D54F9C99161E47850C5864E5CC6DA565 /* Build configuration list for PBXNativeTarget "Pods-News-App-CBA-News-App-CBAUITests" */;
+			buildPhases = (
+				69D0C2BDD9142B4FA19C3B769264F6B0 /* Headers */,
+				82FDB8CD483D97F6CE19E642B80C9BB5 /* Sources */,
+				91051E357ACA61B59716B441B1C6A4EC /* Frameworks */,
+				E5FBDD641537B6D3BCE282E06AC66B16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C320FDBC64D9B3A11FF60360F354860 /* PBXTargetDependency */,
+				4298EFBE74D30334E836A40003D9FC04 /* PBXTargetDependency */,
+			);
+			name = "Pods-News-App-CBA-News-App-CBAUITests";
+			productName = Pods_News_App_CBA_News_App_CBAUITests;
+			productReference = AB8E24224CECFB15B0B8F68F12D57010 /* Pods-News-App-CBA-News-App-CBAUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		38E301C6D334B5B7763014E0B57AFDBF /* paper-onboarding-pointzi-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E3F0286CDFE6B37B64061FCC1A8B0B /* Build configuration list for PBXNativeTarget "paper-onboarding-pointzi-framework" */;
+			buildPhases = (
+				D07C03896A8C7546F163332EDB757234 /* Headers */,
+				318DCD25A55D54D1D2969474178C4E4D /* Sources */,
+				EF860AF60B4AED91DE4EBDD6C7468AAF /* Frameworks */,
+				2B9FDF94D0FA6E31B8D47DE35508F9F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "paper-onboarding-pointzi-framework";
+			productName = paper_onboarding_pointzi;
+			productReference = 8C4EB9602F5F26AAAD3F6D25E1D841CB /* paper-onboarding-pointzi-framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D8ED8082BE16A929AA4098E5792181F /* Pods-News-App-CBATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FFC69CD74DE6DEE8A88A8BF7007C70 /* Build configuration list for PBXNativeTarget "Pods-News-App-CBATests" */;
+			buildPhases = (
+				8D3649A7D49A85424BF66C66770EB039 /* Headers */,
+				80107C29FFF7C1FC0674F4ABDBA372EB /* Sources */,
+				40FA66CCCA0D01CB03F9CB6F8572AB7F /* Frameworks */,
+				000B59BD682397D317698B608896135F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1EC55C70025A5573C237F5C9BF5AF5B /* PBXTargetDependency */,
+			);
+			name = "Pods-News-App-CBATests";
+			productName = Pods_News_App_CBATests;
+			productReference = B35C49B265ED37B2907EA06CBACB573E /* Pods-News-App-CBATests */;
+			productType = "com.apple.product-type.framework";
+		};
+		6993C6262F3B026D809ECAA3762528AA /* pointzi-library-Pointzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F62F5DE71B1BEC5FAA6EFDBF430CCE /* Build configuration list for PBXNativeTarget "pointzi-library-Pointzi" */;
+			buildPhases = (
+				E8269E4CB364B65068B858AFEC31C6E9 /* Sources */,
+				1D286DA816F612122844C63DC82F2F6D /* Frameworks */,
+				8F3DE7670A659AB05C511DBD9DFA969E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pointzi-library-Pointzi";
+			productName = Pointzi;
+			productReference = 938381599AE91129D305A68BD328AAF4 /* pointzi-library-Pointzi */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7A764C6B46495AB82D1CBFB8F279F76C /* paper-onboarding-pointzi-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB2A3AA49326900A219B69959A1DEE6 /* Build configuration list for PBXNativeTarget "paper-onboarding-pointzi-library" */;
+			buildPhases = (
+				003D6A691B0331AC870BD4B79014D4A3 /* Headers */,
+				406F76E6C61F58676DC599F81AE42D7F /* Sources */,
+				4A38A4E590387E5AA4887CF6A31C4E78 /* Frameworks */,
+				D7235089887C5880DAF9FCD43E59CE9D /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "paper-onboarding-pointzi-library";
+			productName = "paper-onboarding-pointzi-library";
+			productReference = 3018BEDF209FAE6AB067460B6A09F7E0 /* paper-onboarding-pointzi-library */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA04EEA18AD939D40408AC34CD7C0788 /* pointzi-framework-Pointzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3381FBEC1965F67AE06E5AF081251572 /* Build configuration list for PBXNativeTarget "pointzi-framework-Pointzi" */;
+			buildPhases = (
+				99CF3A9334BBE608BA2D46D8DE6444AC /* Sources */,
+				864CA8B086085F579B2D3DC2C5F647EE /* Frameworks */,
+				F752FBABDC6B1AE20AC892B9ADD7E947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pointzi-framework-Pointzi";
+			productName = Pointzi;
+			productReference = 49911002E3A0F480233D9C7C6C2D4094 /* pointzi-framework-Pointzi */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E9E60FF959A8713978A25D1EF43E3D83 /* Pods-News-App-CBA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1DF005DEA0E05F84294BA45FB15B30 /* Build configuration list for PBXNativeTarget "Pods-News-App-CBA" */;
+			buildPhases = (
+				AB6F615796868991D3DD61A01DEAAFF6 /* Headers */,
+				C8E5FC65B75C0F4F58B4B9F69D9D3330 /* Sources */,
+				B737FC6F3F9F7DC062E70E9166C058B0 /* Frameworks */,
+				19853417BCAAC36CDDD1180DC435B543 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CDDC34C7054F6C75ACE30C54BEF9E9 /* PBXTargetDependency */,
+				BC2C4597B3628406498D820D6579004A /* PBXTargetDependency */,
+			);
+			name = "Pods-News-App-CBA";
+			productName = Pods_News_App_CBA;
+			productReference = BACA6CD42A29C0BBCC8B484C2024E5BD /* Pods-News-App-CBA */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8C35876A7178969592C9F9B007719183 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38E301C6D334B5B7763014E0B57AFDBF /* paper-onboarding-pointzi-framework */,
+				7A764C6B46495AB82D1CBFB8F279F76C /* paper-onboarding-pointzi-library */,
+				E9E60FF959A8713978A25D1EF43E3D83 /* Pods-News-App-CBA */,
+				1F8AEE31F6F707950E12A510591BB8A4 /* Pods-News-App-CBA-News-App-CBAUITests */,
+				4D8ED8082BE16A929AA4098E5792181F /* Pods-News-App-CBATests */,
+				2C9E18FC8092387D689B4935538035F3 /* pointzi-framework */,
+				AA04EEA18AD939D40408AC34CD7C0788 /* pointzi-framework-Pointzi */,
+				B9DBE7216FE71A04379F4227B636B052 /* pointzi-library */,
+				6993C6262F3B026D809ECAA3762528AA /* pointzi-library-Pointzi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000B59BD682397D317698B608896135F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19853417BCAAC36CDDD1180DC435B543 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B9FDF94D0FA6E31B8D47DE35508F9F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3DE7670A659AB05C511DBD9DFA969E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20AD86890CABA9AB0AAA925AECEF318 /* alert-circled@3x.png in Resources */,
+				4996A6A4D0D9AA964DB19E9E3FA3FCDE /* animation-pulse.gif in Resources */,
+				9820A916F1765C249F7A20ED3D5D4036 /* banks.png in Resources */,
+				312EE2B9F4E5F1CF62133EE69E43BB68 /* camera@3x.png in Resources */,
+				64F414A6B8776FDB585E1C29F7B3B3F2 /* close@3x.png in Resources */,
+				66DB4EF7D64F84AA9C0BC5BFA8CAFCB2 /* default-image-placeholder.png in Resources */,
+				9542F8896F96A40B90A87C864866C938 /* help-circled@3x.png in Resources */,
+				34BC036307600BEEEC74DE2FAFC1EA1E /* hotels.png in Resources */,
+				E4028B595E3256C7EB74A04FCAB317D7 /* Image in Resources */,
+				603A93F47D2179F67CB9F88EB2230C92 /* information-circled@3x.png in Resources */,
+				82F35A3ED3D35F8B7FA557DC1CFA4972 /* key.png in Resources */,
+				1D422F6B3B8428F7FF50ECA707700B4C /* Localizable.strings in Resources */,
+				C62A00007A6B6B5D656B2074EED2FB73 /* pointzi-logo.png in Resources */,
+				6C766B7C950D1683FC4DD8DC2E3A2EA7 /* preview-btn.png in Resources */,
+				961E1CC1F03AC400450B384E3E2AC0E4 /* pz_alert@1x.png in Resources */,
+				EFBDE77A97150523F514DB456A073253 /* pz_alert@2x.png in Resources */,
+				E3ADBA45D981BCC6202AD2CC6854EA25 /* pz_alert@3x.png in Resources */,
+				41C7E216918C15DE8D57B0BE022A73D4 /* pz_backup@1x.png in Resources */,
+				A006A5C08A139F034C0884368C8577A1 /* pz_backup@2x.png in Resources */,
+				689E2FF43E37BAC3B812C031BCE49C03 /* pz_backup@3x.png in Resources */,
+				AEC00CD5CCF06425D0E2CAD7E08207FB /* pz_camera@1x.png in Resources */,
+				EBFCBBC061FA10E3944E410546129E3B /* pz_camera@2x.png in Resources */,
+				C7BDA93EC4E71F9A8154E507E59445B2 /* pz_camera@3x.png in Resources */,
+				434AEBA01A2D73AF661A5415C28C3EE8 /* pz_check_circle@1x.png in Resources */,
+				83547210EB90BED8F98B8AAB7BF23696 /* pz_check_circle@2x.png in Resources */,
+				7121185DF66EAD1E90A18E53751B0A75 /* pz_check_circle@3x.png in Resources */,
+				A1E3F26FA3FDD5EC873309C740C0D00A /* pz_cloud_off@1x.png in Resources */,
+				79B7D6C528F180F3FB348D2E42F77369 /* pz_cloud_off@2x.png in Resources */,
+				FE4067025C222294BDF4876E9F6B39AC /* pz_cloud_off@3x.png in Resources */,
+				EB1E8A8A44D5D19D0DA03ADAEE50EDF6 /* pz_developer_mode@1x.png in Resources */,
+				4A1FCD848612D1E8F5EFA16B372A464B /* pz_developer_mode@2x.png in Resources */,
+				3E1DCF55678DF7F61E46C9C2D2C05D39 /* pz_developer_mode@3x.png in Resources */,
+				1520F1656408295DBEFEEFFD578DA15C /* pz_exit@1x.png in Resources */,
+				C0A92A87A9934A60B42089D981D95A43 /* pz_exit@2x.png in Resources */,
+				69EFEB39AA8AFF8A3862272F901AA061 /* pz_exit@3x.png in Resources */,
+				9665A39965C17F2EF6470AE43089A333 /* pz_link_off@1x.png in Resources */,
+				FF6A8A73BD63518AA115587BB8FE1C32 /* pz_link_off@2x.png in Resources */,
+				420C319B21A41BE8792BF55B4279CC5E /* pz_link_off@3x.png in Resources */,
+				FA711ED2E7A5C90E1901EDFF03CD96D5 /* pz_logo_white.png in Resources */,
+				C1B0DC648F438A5EC6665D6D004C863E /* pz_pause@1x.png in Resources */,
+				1D68A450F72CA55EFA62AC500483C63C /* pz_pause@2x.png in Resources */,
+				E89DFF77BC7CE34DE070BB58622F9127 /* pz_pause@3x.png in Resources */,
+				D010D0353260E525AD9D6076644CE392 /* pz_play_arrow@1x.png in Resources */,
+				EB48DA46665E3287BC6DC041B402A42E /* pz_play_arrow@2x.png in Resources */,
+				6246A6CA49D5AFA53BFAA3672D22EEC0 /* pz_play_arrow@3x.png in Resources */,
+				2FBEA2BFA03687B188A073FA23FC531F /* pz_refresh@1x.png in Resources */,
+				EDDF60BF5C57AA9160A68D8E39CB52B2 /* pz_refresh@2x.png in Resources */,
+				DE3BE0361EB91488B21EA1B942824194 /* pz_refresh@3x.png in Resources */,
+				5C84A8FF6F8A06EFFC87E035B5330366 /* pz_sync@1x.png in Resources */,
+				7868B14DE7B3C34386983C5B970A4696 /* pz_sync@2x.png in Resources */,
+				EAF01F7BF4123D91F1905390EEC31CE8 /* pz_sync@3x.png in Resources */,
+				2730BD618E78AEE1DC3F592735D433F9 /* pz_sync_problem@1x.png in Resources */,
+				4FA40EFB19C36729D6A5B382DFE7AAF3 /* pz_sync_problem@2x.png in Resources */,
+				9F8CE7050108E126633A1C14D506371E /* pz_sync_problem@3x.png in Resources */,
+				FDEDC5B97C38919BF4ED2B24C227FF6E /* pz_system_update@1x.png in Resources */,
+				6B8784F393A79645901BB569EADF3297 /* pz_system_update@2x.png in Resources */,
+				3E8FB826E78DC59C594B1393B389BCDF /* pz_system_update@3x.png in Resources */,
+				8E251572902EC4FBEC4DE30DEAF88200 /* record@3x.png in Resources */,
+				E69637227BBF7E7686CCEC3D925E69F6 /* SHAlertSettingsViewController.xib in Resources */,
+				93DD651003208E7C62AD01BA3B61211F /* SHChoiceViewController.xib in Resources */,
+				0A03839F0D51746DAE59990AE611E039 /* SHCoachmarkTipViewController.xib in Resources */,
+				7004573EDA788593ABA912EB0F516AC1 /* SHFeedbackViewController.xib in Resources */,
+				5C0D117C594CCB2C826A4330F78EE8DD /* SHModalTipViewController.xib in Resources */,
+				C80C62D50D37C69C47B887A87167FC18 /* shopping_cart.png in Resources */,
+				204F011767794714E08F2F861CCECD47 /* SHPopTipViewController.xib in Resources */,
+				E9A61B9E4752F8753F0BDF4B8357C355 /* stores.png in Resources */,
+				C26412F53902D04AA04692C2F063E8A7 /* String in Resources */,
+				D8701B749F5D168486A0DC9E264BFF40 /* wallet.png in Resources */,
+				F20790A375C5D53E108E79B401F7941F /* Xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5FBDD641537B6D3BCE282E06AC66B16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F752FBABDC6B1AE20AC892B9ADD7E947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AEE365893F51FA3FAD8C74D1F6299E6 /* alert-circled@3x.png in Resources */,
+				C867648BD350870BAEAD6CC416F2E794 /* animation-pulse.gif in Resources */,
+				EF837AEA95D8E41E6923EC5CBEB8FAE3 /* banks.png in Resources */,
+				6F826BD1E9C371BE86CEB6FB6D15A240 /* camera@3x.png in Resources */,
+				21E870C84385ADD45529A0CB265EC79C /* close@3x.png in Resources */,
+				B613AB5472B114FED85AA48C7CA4BAA3 /* default-image-placeholder.png in Resources */,
+				4AADB8EA3ABFBCE3888CA084B3DED5EB /* help-circled@3x.png in Resources */,
+				9C2FE684015B3C485AEAE591DFC3AB09 /* hotels.png in Resources */,
+				F7E45D2B72AF283E112BEEDB2268D421 /* Image in Resources */,
+				2EACE9002819533BC0080416C323C063 /* information-circled@3x.png in Resources */,
+				2C94839D237223A09F1E873CA5B44BDA /* key.png in Resources */,
+				14CB4410297607065A497DEFFB7EFEE5 /* Localizable.strings in Resources */,
+				153CF91E745E75F9BC2D1AA9924E6F8E /* pointzi-logo.png in Resources */,
+				0B3FFF94F057F565F26CFEF35CDDB189 /* preview-btn.png in Resources */,
+				55C93195E30207E949CB328520D76E2C /* pz_alert@1x.png in Resources */,
+				CFA4CF18FA5F21FD5EF45888D84DA717 /* pz_alert@2x.png in Resources */,
+				1C4FF6BD949EE0F16C00DDC2FC498FDA /* pz_alert@3x.png in Resources */,
+				154110FD6AA9D050ACEE484A486B2262 /* pz_backup@1x.png in Resources */,
+				9BBE2CFC7F3865C89C3D0714434418B3 /* pz_backup@2x.png in Resources */,
+				CCC09EE43F4748C52826E81217A32B50 /* pz_backup@3x.png in Resources */,
+				EC0F59D68C81646E52B67B239C6B7E8D /* pz_camera@1x.png in Resources */,
+				D98EF1DC2D4611AD819BB39E735E673B /* pz_camera@2x.png in Resources */,
+				114B0BE6A65E808ED14D8FBE06633F13 /* pz_camera@3x.png in Resources */,
+				2295288E0E3615AA7955A1FF893A1070 /* pz_check_circle@1x.png in Resources */,
+				44B20C2E3B5D04B78276BD0BBC14AA8E /* pz_check_circle@2x.png in Resources */,
+				BBF1D0940B592D64811CA5D0C311AE0F /* pz_check_circle@3x.png in Resources */,
+				42652E25AA33C49D874BFA4E05C078EA /* pz_cloud_off@1x.png in Resources */,
+				2A49DB78883AD71AA6C63415EBD178F9 /* pz_cloud_off@2x.png in Resources */,
+				52638F87A2BB84355D017AA3CEFB03F5 /* pz_cloud_off@3x.png in Resources */,
+				2EB17BCF56BA793D2CFBB788CE627411 /* pz_developer_mode@1x.png in Resources */,
+				9432EC2F61E37C7601849B9D7F5C56BA /* pz_developer_mode@2x.png in Resources */,
+				B590DEC313346D0A8022CCDED3E34E7C /* pz_developer_mode@3x.png in Resources */,
+				94CEFC843F6818EF1124C8D2476EF288 /* pz_exit@1x.png in Resources */,
+				9C62B2EAFCDF76B984F9F5C52C967CE2 /* pz_exit@2x.png in Resources */,
+				0FB5BEEC22A508E44091485542D39534 /* pz_exit@3x.png in Resources */,
+				06A62D6E5B834087EEFEDC2B80F82DBA /* pz_link_off@1x.png in Resources */,
+				77578D3E1E0D6B408F3E163D82E405E7 /* pz_link_off@2x.png in Resources */,
+				2A056800B97E9322C019AFD423FB1479 /* pz_link_off@3x.png in Resources */,
+				7B62B241F7300DB8AA8D3121BECE2ECB /* pz_logo_white.png in Resources */,
+				87DF2F6A0E16452B614AE2C3EFB1A4C4 /* pz_pause@1x.png in Resources */,
+				B87669235D4B9E51B4BB658163064FB5 /* pz_pause@2x.png in Resources */,
+				48E905ADDF9E468B75703AE9A9A118A2 /* pz_pause@3x.png in Resources */,
+				73D57A875834C514646068C295C283BC /* pz_play_arrow@1x.png in Resources */,
+				8F33DA274B814207915FBF3BFDC7E99B /* pz_play_arrow@2x.png in Resources */,
+				8C78DFF482B4905744BE248C7138790F /* pz_play_arrow@3x.png in Resources */,
+				8D3C7EC3DAF28339744C94468CAF4DB1 /* pz_refresh@1x.png in Resources */,
+				EEB494DB81300972DC7A38CDB04E2161 /* pz_refresh@2x.png in Resources */,
+				EE4A8B67DE6994BBA12A0198695C6440 /* pz_refresh@3x.png in Resources */,
+				D66F71CCA9553A6E4F00FDCA21E5CD3B /* pz_sync@1x.png in Resources */,
+				F4B96E90466F3B1DB84E46B1CA45962F /* pz_sync@2x.png in Resources */,
+				8DBBBFF0FB60E049BE721EE02D7305FB /* pz_sync@3x.png in Resources */,
+				EEB46665D82A55CE6216FE9D1CEAAC00 /* pz_sync_problem@1x.png in Resources */,
+				66FD0DA26DC056EC3AFB840E89A75B46 /* pz_sync_problem@2x.png in Resources */,
+				1D7A409BAAF2A65EA4198952F3AFB483 /* pz_sync_problem@3x.png in Resources */,
+				31DE04474BC47AC0E477FBC97B309B01 /* pz_system_update@1x.png in Resources */,
+				55CBA0F76E5329D60CB3D2E5C9644CBD /* pz_system_update@2x.png in Resources */,
+				4F83478174FD5D95B0875F700F7F811D /* pz_system_update@3x.png in Resources */,
+				89FE571FA7FF876FA1121A486B3F8744 /* record@3x.png in Resources */,
+				7E988F9CE2FA9451BD1404AB271DEB21 /* SHAlertSettingsViewController.xib in Resources */,
+				F0658EA78B936156817869DF32FB6703 /* SHChoiceViewController.xib in Resources */,
+				0793488DE380E67839725180D17AC138 /* SHCoachmarkTipViewController.xib in Resources */,
+				29D0AFE6DB6F95502221A1CA9AFCDEB6 /* SHFeedbackViewController.xib in Resources */,
+				EEA7B6A738F06C09E637C8F88E214E3D /* SHModalTipViewController.xib in Resources */,
+				B17E911CD6AE08F8303D8F2E5E81991F /* shopping_cart.png in Resources */,
+				2775635F1A6D052F236A2B1781D42078 /* SHPopTipViewController.xib in Resources */,
+				4E862F359D5417E09ED8AA5D3938B5F2 /* stores.png in Resources */,
+				6145692E35D0CDBE76DA7CC8FE760D77 /* String in Resources */,
+				E1256D0D2BF006076570A88AC069CA83 /* wallet.png in Resources */,
+				95F80675C93BDD10D89894A7E0713823 /* Xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7235089887C5880DAF9FCD43E59CE9D /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/paper_onboarding_pointzi/paper-onboarding-pointzi-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/paper_onboarding_pointzi/paper-onboarding-pointzi-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding-pointzi-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/paper_onboarding_pointzi/paper-onboarding-pointzi-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/paper_onboarding_pointzi/paper-onboarding-pointzi-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		318DCD25A55D54D1D2969474178C4E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F22DF6CF937EB76D5ED5C9348402CE9 /* Configuring.swift in Sources */,
+				E20D8231FB2B168BEB76A655EBCD508E /* ConstraintsHalper.swift in Sources */,
+				F0C97EC4AC52AF45D975D3BE0A7C011B /* FillAnimationView.swift in Sources */,
+				2234859F6C0FCE057509C26114E49913 /* GestureControl.swift in Sources */,
+				9C293BD72EFB3D596898902D36AC3B52 /* OnboardingContantViewItem.swift in Sources */,
+				869D53DE94646A1487AA4ACADE7CD148 /* OnboardingContentView.swift in Sources */,
+				C67044074B32F2E03D846AEB51AC5E71 /* PageContainer.swift in Sources */,
+				9CF0E0E97C071971A13DC1C559B3BB6E /* PageView.swift in Sources */,
+				4290282DE0A288E86496D85F31962903 /* PageViewItem.swift in Sources */,
+				99E70F559B8D1300DA939EF396C402DE /* paper-onboarding-pointzi-framework-dummy.m in Sources */,
+				0F066ACC03589496F1FFA06031E0A0F8 /* PaperOnboarding.swift in Sources */,
+				45AC3206ED7FE8ED3C1A12B645E02C7E /* SHCarouselBridge.swift in Sources */,
+				DE965AC52C7232BB75A8F2BF3F91EF69 /* SHCarouselLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		406F76E6C61F58676DC599F81AE42D7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F1EFAFF16DC110795E61230ACC7A7A /* Configuring.swift in Sources */,
+				CD44982EBC246E1228BDBDAF7D798E27 /* ConstraintsHalper.swift in Sources */,
+				DDE786E739A360836ECACEE17AF654DC /* FillAnimationView.swift in Sources */,
+				EF5A9F432F4CAC92F3B3459292CEE077 /* GestureControl.swift in Sources */,
+				107C7C70B94DFB933B62C8FA025FC640 /* OnboardingContantViewItem.swift in Sources */,
+				F77CDB23AB70E332443476A4E5AEF82D /* OnboardingContentView.swift in Sources */,
+				0C7BB822043AC94FB59038E8EAA9981B /* PageContainer.swift in Sources */,
+				E434AA9594A1828630FD0B08A6A01894 /* PageView.swift in Sources */,
+				51F5E89E096412E02627D036292E5AE9 /* PageViewItem.swift in Sources */,
+				54E789673A9C1B0DE91154344E055194 /* paper-onboarding-pointzi-library-dummy.m in Sources */,
+				D372D8AB2F43DF5BA164B6A3B55E7497 /* PaperOnboarding.swift in Sources */,
+				6249A88DB67A4E2156AAB9655488DB4E /* SHCarouselBridge.swift in Sources */,
+				9EA88253F436A592D5A86E261125491E /* SHCarouselLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80107C29FFF7C1FC0674F4ABDBA372EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167CB9EFD13BF8BC2C6CE0A40C57A76D /* Pods-News-App-CBATests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82FDB8CD483D97F6CE19E642B80C9BB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15EB2275CE32F28CAD4E6E74862F90C8 /* Pods-News-App-CBA-News-App-CBAUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99CF3A9334BBE608BA2D46D8DE6444AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E5FC65B75C0F4F58B4B9F69D9D3330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA837BB7BEA4E86EF7F79C11B0F946B /* Pods-News-App-CBA-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8269E4CB364B65068B858AFEC31C6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		176BD5A2B0D63B5840A990F2D9314890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "paper-onboarding-pointzi-library";
+			target = 7A764C6B46495AB82D1CBFB8F279F76C /* paper-onboarding-pointzi-library */;
+			targetProxy = 6D393B5660009760788EBD89F864FB87 /* PBXContainerItemProxy */;
+		};
+		1BFE238FECE031ADCAB44791E2602EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "pointzi-framework-Pointzi";
+			target = AA04EEA18AD939D40408AC34CD7C0788 /* pointzi-framework-Pointzi */;
+			targetProxy = 0C098B3EEF515558F63EA41779B15021 /* PBXContainerItemProxy */;
+		};
+		3C320FDBC64D9B3A11FF60360F354860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "paper-onboarding-pointzi-framework";
+			target = 38E301C6D334B5B7763014E0B57AFDBF /* paper-onboarding-pointzi-framework */;
+			targetProxy = 88A66D7D07CF6203E9B2A10FA0213EEF /* PBXContainerItemProxy */;
+		};
+		4298EFBE74D30334E836A40003D9FC04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "pointzi-framework";
+			target = 2C9E18FC8092387D689B4935538035F3 /* pointzi-framework */;
+			targetProxy = 23C6274162491BC96C3117CF5AD33ED1 /* PBXContainerItemProxy */;
+		};
+		51431F11C5993E0BDF0D47115F7F79FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "paper-onboarding-pointzi-framework";
+			target = 38E301C6D334B5B7763014E0B57AFDBF /* paper-onboarding-pointzi-framework */;
+			targetProxy = E6ED900B1C1C1AC681AA87B78C865BA1 /* PBXContainerItemProxy */;
+		};
+		7C2FFC0B2A18DD3AE00EFB922D80069D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "pointzi-library-Pointzi";
+			target = 6993C6262F3B026D809ECAA3762528AA /* pointzi-library-Pointzi */;
+			targetProxy = 549A7BF445E3A4A2CC163239110D1377 /* PBXContainerItemProxy */;
+		};
+		83CDDC34C7054F6C75ACE30C54BEF9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "paper-onboarding-pointzi-framework";
+			target = 38E301C6D334B5B7763014E0B57AFDBF /* paper-onboarding-pointzi-framework */;
+			targetProxy = A9F53253E0A6A366F46F5B93146F86D6 /* PBXContainerItemProxy */;
+		};
+		B1EC55C70025A5573C237F5C9BF5AF5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-News-App-CBA";
+			target = E9E60FF959A8713978A25D1EF43E3D83 /* Pods-News-App-CBA */;
+			targetProxy = 5A49D77F0E0B461AFDB392BD22A4B61A /* PBXContainerItemProxy */;
+		};
+		BC2C4597B3628406498D820D6579004A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "pointzi-framework";
+			target = 2C9E18FC8092387D689B4935538035F3 /* pointzi-framework */;
+			targetProxy = 77977F06BA776FF6675881D8BC3CCDAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01D6D57BA2880D5804247E959F5932E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2B411E29385487BA7148DA54221690 /* pointzi-library.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/pointzi-library";
+				IBSC_MODULE = pointzi;
+				INFOPLIST_FILE = "Target Support Files/pointzi-library/ResourceBundle-Pointzi-pointzi-library-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Pointzi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		180D2E12AD61393FF2E26139A8CF463C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19BC517A2549498FA4BA70107A100078 /* paper-onboarding-pointzi-framework.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/paper-onboarding-pointzi-framework/paper-onboarding-pointzi-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/paper-onboarding-pointzi-framework/paper-onboarding-pointzi-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/paper-onboarding-pointzi-framework/paper-onboarding-pointzi-framework.modulemap";
+				PRODUCT_MODULE_NAME = paper_onboarding_pointzi;
+				PRODUCT_NAME = paper_onboarding_pointzi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1905112D889950EDEAB080B48F73815B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390D9F6473F930A19E595E362E015549 /* Pods-News-App-CBA-News-App-CBAUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-News-App-CBA-News-App-CBAUITests/Pods-News-App-CBA-News-App-CBAUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-News-App-CBA-News-App-CBAUITests/Pods-News-App-CBA-News-App-CBAUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		240E908A8E16EABB3F7E7FF1CF41B8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140AF56B01AA338D807D67D5A33DAB19 /* paper-onboarding-pointzi-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/paper-onboarding-pointzi-library/paper-onboarding-pointzi-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = "Headers/Public/paper_onboarding_pointzi/paper-onboarding-pointzi-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = paper_onboarding_pointzi;
+				PRODUCT_NAME = "paper-onboarding-pointzi-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27C47CD1250E9B630C33CDACB1435B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625078BA3C1DE4848292FAD4053994A5 /* paper-onboarding-pointzi-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/paper-onboarding-pointzi-library/paper-onboarding-pointzi-library-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = "Headers/Public/paper_onboarding_pointzi/paper-onboarding-pointzi-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = paper_onboarding_pointzi;
+				PRODUCT_NAME = "paper-onboarding-pointzi-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D97571E109A279E66608CD662BB96EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A99BB3BA485D6A07D2ABA17EB951EC /* Pods-News-App-CBA.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-News-App-CBA/Pods-News-App-CBA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-News-App-CBA/Pods-News-App-CBA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56863147F3E81262CD787905D8096A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D2F23E885B8D5B5A5D7DF21019BF0C /* pointzi-framework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A4A04E210763A0E9B5F3E75B00F5640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617D640E1BFD841B434872817112404E /* paper-onboarding-pointzi-framework.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/paper-onboarding-pointzi-framework/paper-onboarding-pointzi-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/paper-onboarding-pointzi-framework/paper-onboarding-pointzi-framework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/paper-onboarding-pointzi-framework/paper-onboarding-pointzi-framework.modulemap";
+				PRODUCT_MODULE_NAME = paper_onboarding_pointzi;
+				PRODUCT_NAME = paper_onboarding_pointzi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61B796C9D87688BD048992E709BBD362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE775F73745E8F3792A4C5484C9B87A /* Pods-News-App-CBA-News-App-CBAUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-News-App-CBA-News-App-CBAUITests/Pods-News-App-CBA-News-App-CBAUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-News-App-CBA-News-App-CBAUITests/Pods-News-App-CBA-News-App-CBAUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		862C50D5628C7D1AAF62F4FD4F79C765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69D0E2930E50EE533BB165F300C9D13 /* pointzi-library.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B2DE8AF1F9174E17A5BA1F6E9A51D7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515AC11D0F5D946657815749DE45CF3C /* Pods-News-App-CBATests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-News-App-CBATests/Pods-News-App-CBATests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-News-App-CBATests/Pods-News-App-CBATests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C302B9942DCAB043CA2EDA84A00B09AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1144F73FD51BA6B450A1EDC02D0D440 /* Pods-News-App-CBA.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-News-App-CBA/Pods-News-App-CBA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-News-App-CBA/Pods-News-App-CBA.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5BAB5508289231736BE287F62319846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2B411E29385487BA7148DA54221690 /* pointzi-library.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEECFA19A5EC19CED31B062F21A51075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A6A9C4FCBA489D07224FE842F43F56 /* pointzi-framework.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/pointzi-framework";
+				IBSC_MODULE = pointzi;
+				INFOPLIST_FILE = "Target Support Files/pointzi-framework/ResourceBundle-Pointzi-pointzi-framework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Pointzi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DA81FCAFE0CBF21043E4AAF4941999EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A6A9C4FCBA489D07224FE842F43F56 /* pointzi-framework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E288E19F8A0E1D76D1612D11FCBE0A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D2F23E885B8D5B5A5D7DF21019BF0C /* pointzi-framework.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/pointzi-framework";
+				IBSC_MODULE = pointzi;
+				INFOPLIST_FILE = "Target Support Files/pointzi-framework/ResourceBundle-Pointzi-pointzi-framework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Pointzi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EA2C44AEE039EC8FDE59F339BDCAA048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB2A515689C185F07C2E1F3AAA6AD51 /* Pods-News-App-CBATests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-News-App-CBATests/Pods-News-App-CBATests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-News-App-CBATests/Pods-News-App-CBATests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EABE0FDAF6958CA41C62909E9D8E968C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69D0E2930E50EE533BB165F300C9D13 /* pointzi-library.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/pointzi-library";
+				IBSC_MODULE = pointzi;
+				INFOPLIST_FILE = "Target Support Files/pointzi-library/ResourceBundle-Pointzi-pointzi-library-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = Pointzi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11FFC69CD74DE6DEE8A88A8BF7007C70 /* Build configuration list for PBXNativeTarget "Pods-News-App-CBATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2DE8AF1F9174E17A5BA1F6E9A51D7A0 /* Debug */,
+				EA2C44AEE039EC8FDE59F339BDCAA048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BB2A3AA49326900A219B69959A1DEE6 /* Build configuration list for PBXNativeTarget "paper-onboarding-pointzi-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240E908A8E16EABB3F7E7FF1CF41B8F2 /* Debug */,
+				27C47CD1250E9B630C33CDACB1435B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3381FBEC1965F67AE06E5AF081251572 /* Build configuration list for PBXNativeTarget "pointzi-framework-Pointzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEECFA19A5EC19CED31B062F21A51075 /* Debug */,
+				E288E19F8A0E1D76D1612D11FCBE0A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539DCB1765E52611E9D9910E6B8691DD /* Build configuration list for PBXAggregateTarget "pointzi-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862C50D5628C7D1AAF62F4FD4F79C765 /* Debug */,
+				C5BAB5508289231736BE287F62319846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706E9D68EA5D71683D9AD3A68DE8743B /* Build configuration list for PBXAggregateTarget "pointzi-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA81FCAFE0CBF21043E4AAF4941999EB /* Debug */,
+				56863147F3E81262CD787905D8096A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E3F0286CDFE6B37B64061FCC1A8B0B /* Build configuration list for PBXNativeTarget "paper-onboarding-pointzi-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180D2E12AD61393FF2E26139A8CF463C /* Debug */,
+				5A4A04E210763A0E9B5F3E75B00F5640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1DF005DEA0E05F84294BA45FB15B30 /* Build configuration list for PBXNativeTarget "Pods-News-App-CBA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C302B9942DCAB043CA2EDA84A00B09AE /* Debug */,
+				2D97571E109A279E66608CD662BB96EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D54F9C99161E47850C5864E5CC6DA565 /* Build configuration list for PBXNativeTarget "Pods-News-App-CBA-News-App-CBAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61B796C9D87688BD048992E709BBD362 /* Debug */,
+				1905112D889950EDEAB080B48F73815B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F62F5DE71B1BEC5FAA6EFDBF430CCE /* Build configuration list for PBXNativeTarget "pointzi-library-Pointzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABE0FDAF6958CA41C62909E9D8E968C /* Debug */,
+				01D6D57BA2880D5804247E959F5932E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
