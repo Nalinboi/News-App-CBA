@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Replace 'MyApp' with your app_key, registered in the Contextual Dashboard.
+        Pointzi.sharedInstance().registerInstall(forApp: "MyApp", withDebugMode: false)
+        // Set 'withDebugMode' to 'true' to enable debug logging.
         return true
     }
 
